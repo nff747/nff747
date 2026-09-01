@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60">
+  <defs>
+    <filter id="fglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="60" fill="#0D1117" rx="6"/>
+  
+  <!-- BORDER GLOW -->
+  <rect x="1" y="1" width="798" height="58" rx="6" fill="none" stroke="#FF0055" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- LEFT STATUS DOT -->
+  <circle cx="24" cy="30" r="4" fill="#FF0055" filter="url(#fglow)">
+    <animate attributeName="r" values="4;5;4" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- TEXT -->
+  <text x="45" y="35" font-family="monospace" font-size="13" fill="#8b949e" letter-spacing="1">
+    <tspan fill="#FF0055">SYS.OUT</tspan> → The screen is a portal. The GPU is the engine. The shader is the soul.
+  </text>
+</svg>

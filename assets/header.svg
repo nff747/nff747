@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glitch">
+      <feOffset in="SourceGraphic" dx="2" dy="0" result="r">
+        <animate attributeName="dx" values="0;3;-2;0;4;-1;0" dur="0.4s" repeatCount="indefinite"/>
+      </feOffset>
+      <feOffset in="SourceGraphic" dx="-2" dy="0" result="b">
+        <animate attributeName="dx" values="0;-3;2;0;-4;1;0" dur="0.4s" repeatCount="indefinite"/>
+      </feOffset>
+      <feColorMatrix in="r" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="red"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="blue"/>
+      <feBlend in="red" in2="blue" mode="screen" result="blend"/>
+      <feBlend in="blend" in2="SourceGraphic" mode="screen"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="50%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#1a0a12"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="50%" style="stop-color:#FF0055"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FF005510" stroke-width="0.5"/>
+    </pattern>
+    <clipPath id="scanline-clip">
+      <rect x="0" y="0" width="1200" height="400"/>
+    </clipPath>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- ANIMATED SCANLINES -->
+  <g opacity="0.06" clip-path="url(#scanline-clip)">
+    <rect width="1200" height="2" fill="#fff" y="0">
+      <animate attributeName="y" values="-2;400" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="1200" height="1" fill="#fff" y="0">
+      <animate attributeName="y" values="-2;400" dur="2.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- FLOATING PARTICLES -->
+  <circle cx="100" cy="80" r="1.5" fill="#FF0055" opacity="0.6">
+    <animate attributeName="cy" values="80;60;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="320" r="1" fill="#FF0055" opacity="0.4">
+    <animate attributeName="cy" values="320;290;320" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="100" r="2" fill="#FF0055" opacity="0.5">
+    <animate attributeName="cy" values="100;70;100" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="280" r="1.2" fill="#FF0055" opacity="0.3">
+    <animate attributeName="cy" values="280;250;280" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="50" r="1" fill="#FF0055" opacity="0.5">
+    <animate attributeName="cy" values="50;30;50" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="350" r="1.5" fill="#FF0055" opacity="0.4">
+    <animate attributeName="cy" values="350;330;350" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="150" r="1" fill="#FF0055" opacity="0.6">
+    <animate attributeName="cy" values="150;130;150" dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="200" r="0.8" fill="#00FFAA" opacity="0.3">
+    <animate attributeName="cy" values="200;180;200" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- HORIZONTAL ACCENT LINES -->
+  <line x1="0" y1="130" x2="1200" y2="130" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.5"/>
+  <line x1="0" y1="270" x2="1200" y2="270" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- CORNER DECORATIONS -->
+  <g stroke="#FF0055" stroke-width="1.5" fill="none" opacity="0.6">
+    <polyline points="30,60 30,30 60,30"/>
+    <polyline points="1140,30 1170,30 1170,60"/>
+    <polyline points="30,340 30,370 60,370"/>
+    <polyline points="1140,370 1170,370 1170,340"/>
+  </g>
+
+  <!-- SIDE STATUS INDICATORS -->
+  <g fill="#FF0055" opacity="0.5">
+    <rect x="35" y="80" width="3" height="3" rx="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="35" y="90" width="3" height="3" rx="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="35" y="100" width="3" height="3" rx="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- TOP STATUS TEXT -->
+  <text x="60" y="26" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.5">SYS.STATUS: ONLINE</text>
+  <text x="1010" y="26" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.5">
+    PID:7747 | GPU:ACTIVE
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- MAIN TITLE WITH GLITCH -->
+  <g filter="url(#glitch)">
+    <text x="600" y="175" text-anchor="middle" font-family="monospace" font-weight="900" font-size="72" fill="#FFFFFF" filter="url(#glow)" letter-spacing="12">
+      FROZEN FLAME
+    </text>
+  </g>
+
+  <!-- SUBTITLE -->
+  <text x="600" y="220" text-anchor="middle" font-family="monospace" font-weight="400" font-size="16" fill="#FF0055" letter-spacing="8" opacity="0.9">
+    SENIOR CREATIVE DEVELOPER
+  </text>
+
+  <!-- ANIMATED TAGLINE -->
+  <text x="600" y="265" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e" letter-spacing="3">
+    ▸ WE DON'T BUILD WEBSITES — WE BUILD DIMENSIONS ◂
+  </text>
+
+  <!-- PULSING DOT -->
+  <circle cx="600" cy="300" r="3" fill="#FF0055">
+    <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- BOTTOM STATUS BAR -->
+  <rect x="0" y="380" width="1200" height="20" fill="#0a0a0a" opacity="0.8"/>
+  <text x="20" y="394" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.6">
+    ▪ WEBGL ▪ THREE.JS ▪ GLSL ▪ REACT ▪ TYPESCRIPT ▪ BLENDER ▪ AI RIGGING ▪ PROCEDURAL GENERATION ▪ WASM
+  </text>
+  <text x="1100" y="394" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.4">
+    v3.0
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="1.5s" repeatCount="indefinite"/>
+  </text>
+</svg>

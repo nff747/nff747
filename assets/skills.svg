@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <filter id="sglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF0055"/>
+      <stop offset="100%" style="stop-color:#FF006A"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF0055"/>
+      <stop offset="100%" style="stop-color:#cc0044"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="200" fill="#0D1117" rx="8"/>
+
+  <!-- TITLE -->
+  <text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="12" fill="#FF0055" letter-spacing="4" filter="url(#sglow)">[ THREAT LEVEL ASSESSMENT ]</text>
+
+  <!-- SKILL 1: WebGL / Three.js -->
+  <text x="20" y="60" font-family="monospace" font-size="11" fill="#c9d1d9">WebGL / Three.js</text>
+  <rect x="180" y="48" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="48" width="0" height="16" rx="2" fill="url(#bar1)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="555" dur="1.5s" fill="freeze" begin="0.2s"/>
+  </rect>
+  <text x="770" y="60" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">96%</text>
+
+  <!-- SKILL 2: React / TypeScript -->
+  <text x="20" y="90" font-family="monospace" font-size="11" fill="#c9d1d9">React / TypeScript</text>
+  <rect x="180" y="78" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="78" width="0" height="16" rx="2" fill="url(#bar1)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="530" dur="1.5s" fill="freeze" begin="0.4s"/>
+  </rect>
+  <text x="770" y="90" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">92%</text>
+
+  <!-- SKILL 3: GLSL Shaders -->
+  <text x="20" y="120" font-family="monospace" font-size="11" fill="#c9d1d9">GLSL Shaders</text>
+  <rect x="180" y="108" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="108" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="510" dur="1.5s" fill="freeze" begin="0.6s"/>
+  </rect>
+  <text x="770" y="120" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">88%</text>
+
+  <!-- SKILL 4: Blender / 3D Pipeline -->
+  <text x="20" y="150" font-family="monospace" font-size="11" fill="#c9d1d9">Blender / 3D Pipeline</text>
+  <rect x="180" y="138" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="138" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="490" dur="1.5s" fill="freeze" begin="0.8s"/>
+  </rect>
+  <text x="770" y="150" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">85%</text>
+
+  <!-- SKILL 5: AI Rigging Workflows -->
+  <text x="20" y="180" font-family="monospace" font-size="11" fill="#c9d1d9">AI Rigging Workflows</text>
+  <rect x="180" y="168" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="168" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="460" dur="1.5s" fill="freeze" begin="1.0s"/>
+  </rect>
+  <text x="770" y="180" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">80%</text>
+</svg>
