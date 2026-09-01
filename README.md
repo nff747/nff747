@@ -4,7 +4,7 @@
 
 <br>
 
-<p><em>I build high-performance, dark-themed interactive UIs and procedural 3D animations engineered to drive conversions. My focus is on architecting immersive web experiences at the intersection of modern frontend frameworks and low-level graphics APIs.</em></p>
+<p><em>Forging visceral realities at 60 FPS. Where raw mathematics and low-level compute collide to birth procedural 3D ecosystems and hyper-optimized dark-themed interfaces. Welcome to the runtime.</em></p>
 
 <br>
 
