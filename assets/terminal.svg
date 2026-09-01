@@ -1,94 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="850" height="420">
   <defs>
-    <filter id="tglow">
-      <feGaussianBlur stdDeviation="1" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <filter id="tg"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="tg2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
-  <!-- TERMINAL WINDOW -->
-  <rect x="0" y="0" width="800" height="380" rx="8" fill="#0D1117" stroke="#1a1f2b" stroke-width="1.5"/>
+  <!-- TERMINAL CHROME -->
+  <rect x="0" y="0" width="850" height="420" rx="10" fill="#0A0E14" stroke="#FF005520" stroke-width="1"/>
   
   <!-- TITLE BAR -->
-  <rect x="0" y="0" width="800" height="36" rx="8" fill="#161B22"/>
-  <rect x="0" y="20" width="800" height="16" fill="#161B22"/>
-  
-  <!-- WINDOW DOTS -->
-  <circle cx="20" cy="18" r="6" fill="#FF5F57"/>
-  <circle cx="40" cy="18" r="6" fill="#FEBC2E"/>
-  <circle cx="60" cy="18" r="6" fill="#28C840"/>
-  
-  <!-- TITLE BAR TEXT -->
-  <text x="400" y="22" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">iKi@frozen-flame: ~/identity</text>
+  <rect x="0" y="0" width="850" height="38" rx="10" fill="#0F1318"/>
+  <rect x="0" y="22" width="850" height="16" fill="#0F1318"/>
+  <circle cx="22" cy="19" r="6.5" fill="#FF5F57"/><circle cx="44" cy="19" r="6.5" fill="#FEBC2E"/><circle cx="66" cy="19" r="6.5" fill="#28C840"/>
+  <text x="425" y="24" text-anchor="middle" font-family="monospace" font-size="11" fill="#5c6370">iKi@frozen-flame ~/manifest — zsh — 80x24</text>
 
-  <!-- BLINKING CURSOR LINE 1 -->
-  <g filter="url(#tglow)">
-    <text x="20" y="70" font-family="monospace" font-size="13" fill="#FF0055">❯</text>
-    <text x="40" y="70" font-family="monospace" font-size="13" fill="#c9d1d9">cat ./manifest.json</text>
+  <!-- SCANLINE -->
+  <rect width="850" height="1" fill="#FFFFFF" opacity="0.02" y="0"><animate attributeName="y" values="0;420" dur="2s" repeatCount="indefinite"/></rect>
+
+  <!-- LINE 1: COMMAND -->
+  <text x="22" y="68" font-family="monospace" font-size="13" fill="#FF0055" filter="url(#tg)">❯</text>
+  <text x="40" y="68" font-family="monospace" font-size="13" fill="#c9d1d9">neofetch --identity</text>
+  <rect x="220" y="55" width="8" height="15" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="3" begin="0s" fill="freeze"/></rect>
+
+  <!-- NEOFETCH-STYLE ASCII ART LEFT SIDE -->
+  <g font-family="monospace" font-size="11" fill="#FF0055" filter="url(#tg)" opacity="0.9">
+    <text x="22" y="100">    ██████╗ ███████╗</text>
+    <text x="22" y="116">   ██╔════╝ ██╔════╝</text>
+    <text x="22" y="132">   █████╗   █████╗  </text>
+    <text x="22" y="148">   ██╔══╝   ██╔══╝  </text>
+    <text x="22" y="164">   ██║      ██║     </text>
+    <text x="22" y="180">   ╚═╝      ╚═╝     </text>
   </g>
 
-  <!-- JSON OUTPUT -->
-  <text x="20" y="100" font-family="monospace" font-size="12.5" fill="#8b949e">{</text>
-  
-  <text x="40" y="122" font-family="monospace" font-size="12.5" fill="#FF0055">"alias"</text>
-  <text x="105" y="122" font-family="monospace" font-size="12.5" fill="#8b949e">:</text>
-  <text x="120" y="122" font-family="monospace" font-size="12.5" fill="#79c0ff">"iKi"</text>
-  <text x="160" y="122" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
+  <!-- NEOFETCH-STYLE INFO RIGHT SIDE -->
+  <g font-family="monospace" font-size="12">
+    <text x="250" y="100" fill="#FF0055" filter="url(#tg)">iKi</text><text x="278" y="100" fill="#5c6370">@</text><text x="294" y="100" fill="#FF0055" filter="url(#tg)">frozen-flame</text>
+    <text x="250" y="116" fill="#5c6370">──────────────────────────</text>
 
-  <text x="40" y="144" font-family="monospace" font-size="12.5" fill="#FF0055">"studio"</text>
-  <text x="120" y="144" font-family="monospace" font-size="12.5" fill="#8b949e">:</text>
-  <text x="135" y="144" font-family="monospace" font-size="12.5" fill="#79c0ff">"Frozen Flame"</text>
-  <text x="268" y="144" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-
-  <text x="40" y="166" font-family="monospace" font-size="12.5" fill="#FF0055">"role"</text>
-  <text x="97" y="166" font-family="monospace" font-size="12.5" fill="#8b949e">:</text>
-  <text x="112" y="166" font-family="monospace" font-size="12.5" fill="#79c0ff">"Senior Creative Developer"</text>
-  <text x="372" y="166" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-
-  <text x="40" y="188" font-family="monospace" font-size="12.5" fill="#FF0055">"stack"</text>
-  <text x="105" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">: [</text>
-  <text x="130" y="188" font-family="monospace" font-size="12.5" fill="#79c0ff">"WebGL"</text>
-  <text x="182" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="195" y="188" font-family="monospace" font-size="12.5" fill="#79c0ff">"Three.js"</text>
-  <text x="274" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="287" y="188" font-family="monospace" font-size="12.5" fill="#79c0ff">"GLSL"</text>
-  <text x="332" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="345" y="188" font-family="monospace" font-size="12.5" fill="#79c0ff">"React"</text>
-  <text x="398" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="411" y="188" font-family="monospace" font-size="12.5" fill="#79c0ff">"TypeScript"</text>
-  <text x="510" y="188" font-family="monospace" font-size="12.5" fill="#8b949e">],</text>
-
-  <text x="40" y="210" font-family="monospace" font-size="12.5" fill="#FF0055">"pipeline"</text>
-  <text x="127" y="210" font-family="monospace" font-size="12.5" fill="#8b949e">: [</text>
-  <text x="152" y="210" font-family="monospace" font-size="12.5" fill="#79c0ff">"Blender"</text>
-  <text x="224" y="210" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="237" y="210" font-family="monospace" font-size="12.5" fill="#79c0ff">"AI Rigging"</text>
-  <text x="338" y="210" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-  <text x="351" y="210" font-family="monospace" font-size="12.5" fill="#79c0ff">"Procedural Gen"</text>
-  <text x="490" y="210" font-family="monospace" font-size="12.5" fill="#8b949e">],</text>
-
-  <text x="40" y="232" font-family="monospace" font-size="12.5" fill="#FF0055">"gpu_status"</text>
-  <text x="142" y="232" font-family="monospace" font-size="12.5" fill="#8b949e">:</text>
-  <text x="157" y="232" font-family="monospace" font-size="12.5" fill="#3fb950">"ACTIVE"</text>
-  <text x="224" y="232" font-family="monospace" font-size="12.5" fill="#8b949e">,</text>
-
-  <text x="40" y="254" font-family="monospace" font-size="12.5" fill="#FF0055">"philosophy"</text>
-  <text x="150" y="254" font-family="monospace" font-size="12.5" fill="#8b949e">:</text>
-  <text x="165" y="254" font-family="monospace" font-size="12.5" fill="#79c0ff">"The screen is a portal. The shader is the soul."</text>
-
-  <text x="20" y="276" font-family="monospace" font-size="12.5" fill="#8b949e">}</text>
-
-  <!-- COMMAND PROMPT 2 -->
-  <g filter="url(#tglow)">
-    <text x="20" y="310" font-family="monospace" font-size="13" fill="#FF0055">❯</text>
-    <text x="40" y="310" font-family="monospace" font-size="13" fill="#c9d1d9">echo $CURRENT_MISSION</text>
+    <text x="250" y="136" fill="#FF0055">OS</text><text x="290" y="136" fill="#5c6370">:</text><text x="308" y="136" fill="#c9d1d9">The Web Platform</text>
+    <text x="250" y="154" fill="#FF0055">Role</text><text x="290" y="154" fill="#5c6370">:</text><text x="308" y="154" fill="#c9d1d9">Senior Creative Developer</text>
+    <text x="250" y="172" fill="#FF0055">GPU</text><text x="290" y="172" fill="#5c6370">:</text><text x="308" y="172" fill="#3fb950">ACTIVE</text>
+      <circle cx="374" cy="168" r="3" fill="#3fb950"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <text x="250" y="190" fill="#FF0055">Shell</text><text x="290" y="190" fill="#5c6370">:</text><text x="308" y="190" fill="#c9d1d9">WebGL / GLSL / Three.js</text>
+    <text x="250" y="208" fill="#FF0055">Lang</text><text x="290" y="208" fill="#5c6370">:</text><text x="308" y="208" fill="#c9d1d9">TypeScript, GLSL, Rust, Python</text>
+    <text x="250" y="226" fill="#FF0055">UI</text><text x="290" y="226" fill="#5c6370">:</text><text x="308" y="226" fill="#c9d1d9">React + Vite + Dark Mode Only</text>
+    <text x="250" y="244" fill="#FF0055">3D</text><text x="290" y="244" fill="#5c6370">:</text><text x="308" y="244" fill="#c9d1d9">Blender → AI Rigging → Procedural</text>
+    <text x="250" y="262" fill="#FF0055">Uptime</text><text x="290" y="262" fill="#5c6370">:</text><text x="308" y="262" fill="#c9d1d9">Since September 2024</text>
   </g>
-  <text x="20" y="335" font-family="monospace" font-size="12.5" fill="#3fb950">
-    Forging GPU-accelerated dark-mode universes that melt screens.
+
+  <!-- COLOR BAR (neofetch style) -->
+  <g transform="translate(250, 278)">
+    <rect x="0" y="0" width="22" height="14" rx="2" fill="#1a1b26"/>
+    <rect x="24" y="0" width="22" height="14" rx="2" fill="#FF0055"/>
+    <rect x="48" y="0" width="22" height="14" rx="2" fill="#3fb950"/>
+    <rect x="72" y="0" width="22" height="14" rx="2" fill="#FEBC2E"/>
+    <rect x="96" y="0" width="22" height="14" rx="2" fill="#79c0ff"/>
+    <rect x="120" y="0" width="22" height="14" rx="2" fill="#d2a8ff"/>
+    <rect x="144" y="0" width="22" height="14" rx="2" fill="#00FFAA"/>
+    <rect x="168" y="0" width="22" height="14" rx="2" fill="#c9d1d9"/>
+  </g>
+
+  <!-- DIVIDER -->
+  <line x1="22" y1="310" x2="828" y2="310" stroke="#FF005525" stroke-width="0.5"/>
+
+  <!-- LINE 2: SECOND COMMAND -->
+  <text x="22" y="340" font-family="monospace" font-size="13" fill="#FF0055" filter="url(#tg)">❯</text>
+  <text x="40" y="340" font-family="monospace" font-size="13" fill="#c9d1d9">echo $PHILOSOPHY</text>
+
+  <text x="22" y="365" font-family="monospace" font-size="12" fill="#3fb950" filter="url(#tg)">
+    "The screen is a portal. The GPU is the engine. The shader is the soul."
   </text>
 
-  <!-- BLINKING CURSOR -->
-  <rect x="20" y="352" width="8" height="16" fill="#FF0055">
+  <!-- LINE 3: NEXT PROMPT + BLINK -->
+  <text x="22" y="400" font-family="monospace" font-size="13" fill="#FF0055" filter="url(#tg)">❯</text>
+  <rect x="40" y="387" width="9" height="16" fill="#FF0055">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>

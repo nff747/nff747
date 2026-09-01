@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <filter id="rg"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="rg2"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="500" height="500" fill="#0A0E14" rx="10"/>
+  <rect x="1" y="1" width="498" height="498" rx="10" fill="none" stroke="#FF005520" stroke-width="0.5"/>
+
+  <!-- TITLE -->
+  <text x="250" y="30" text-anchor="middle" font-family="monospace" font-size="10" fill="#FF0055" letter-spacing="4" filter="url(#rg2)" opacity="0.8">[ SKILL RADAR ]</text>
+
+  <!-- ROTATING SCAN LINE -->
+  <g transform="translate(250,265)">
+    <line x1="0" y1="0" x2="0" y2="-180" stroke="#FF0055" stroke-width="0.8" opacity="0.15" filter="url(#rg)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <!-- SCAN TRAIL -->
+    <polygon points="0,0 -30,-175 0,-180 30,-175" fill="#FF0055" opacity="0.03">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- HEX GRID RINGS -->
+  <g transform="translate(250,265)" stroke="#FF0055" fill="none" opacity="0.08">
+    <polygon points="0,-180 155.88,-90 155.88,90 0,180 -155.88,90 -155.88,-90"/>
+    <polygon points="0,-135 116.91,-67.5 116.91,67.5 0,135 -116.91,67.5 -116.91,-67.5"/>
+    <polygon points="0,-90 77.94,-45 77.94,45 0,90 -77.94,45 -77.94,-45"/>
+    <polygon points="0,-45 38.97,-22.5 38.97,22.5 0,45 -38.97,22.5 -38.97,-22.5"/>
+  </g>
+
+  <!-- AXIS LINES -->
+  <g transform="translate(250,265)" stroke="#FF005515" stroke-width="0.5">
+    <line x1="0" y1="-180" x2="0" y2="180"/>
+    <line x1="-155.88" y1="-90" x2="155.88" y2="90"/>
+    <line x1="-155.88" y1="90" x2="155.88" y2="-90"/>
+  </g>
+
+  <!-- SKILL POLYGON (WebGL:96%, React:92%, GLSL:88%, Blender:85%, AI:80%, Procedural:90%) -->
+  <g transform="translate(250,265)">
+    <polygon
+      points="0,-172.8 143.52,82.8 -124.56,81 0,153 -121.05,-64.8 148.42,-75.6"
+      fill="#FF005520" stroke="#FF0055" stroke-width="1.5" filter="url(#rg)" opacity="0">
+      <animate attributeName="opacity" values="0;0.8" dur="1.5s" fill="freeze" begin="0.5s"/>
+      <animate attributeName="points"
+        values="0,0 0,0 0,0 0,0 0,0 0,0;0,-172.8 143.52,82.8 -124.56,81 0,153 -121.05,-64.8 148.42,-75.6"
+        dur="1.5s" fill="freeze" begin="0.5s"/>
+    </polygon>
+  </g>
+
+  <!-- DATA POINTS WITH GLOW -->
+  <g transform="translate(250,265)" filter="url(#rg)">
+    <!-- WebGL 96% - top -->
+    <circle cx="0" cy="-172.8" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="1.8s"/></circle>
+    <!-- React 92% - top right -->
+    <circle cx="143.52" cy="82.8" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="2.0s"/></circle>
+    <!-- GLSL 88% - bottom right -->
+    <circle cx="-124.56" cy="81" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="2.2s"/></circle>
+    <!-- Blender 85% - bottom -->
+    <circle cx="0" cy="153" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="2.4s"/></circle>
+    <!-- AI Rigging 80% - bottom left -->
+    <circle cx="-121.05" cy="-64.8" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="2.6s"/></circle>
+    <!-- Procedural 90% - top left -->
+    <circle cx="148.42" cy="-75.6" r="4" fill="#FF0055" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze" begin="2.8s"/></circle>
+  </g>
+
+  <!-- AXIS LABELS -->
+  <g font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">
+    <text x="250" y="62" fill="#FF0055" font-weight="bold">WebGL</text>
+    <text x="250" y="75" font-size="9" fill="#5c6370">96%</text>
+
+    <text x="425" y="360" fill="#FF0055" font-weight="bold">React/TS</text>
+    <text x="425" y="373" font-size="9" fill="#5c6370">92%</text>
+
+    <text x="80" y="360" fill="#FF0055" font-weight="bold">GLSL</text>
+    <text x="80" y="373" font-size="9" fill="#5c6370">88%</text>
+
+    <text x="250" y="475" fill="#FF0055" font-weight="bold">Blender</text>
+    <text x="250" y="488" font-size="9" fill="#5c6370">85%</text>
+
+    <text x="88" y="190" fill="#FF0055" font-weight="bold">AI Rigging</text>
+    <text x="88" y="203" font-size="9" fill="#5c6370">80%</text>
+
+    <text x="418" y="178" fill="#FF0055" font-weight="bold">Procedural</text>
+    <text x="418" y="191" font-size="9" fill="#5c6370">90%</text>
+  </g>
+</svg>

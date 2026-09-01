@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <defs>
+    <filter id="wg"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="500" height="160" fill="#0A0E14" rx="10"/>
+  <rect x="1" y="1" width="498" height="158" rx="10" fill="none" stroke="#FF005520" stroke-width="0.5"/>
+
+  <text x="250" y="25" text-anchor="middle" font-family="monospace" font-size="9" fill="#FF0055" letter-spacing="3" opacity="0.7">[ AUDIO SIGNAL ]</text>
+
+  <!-- WAVEFORM BARS — 60 bars -->
+  <g transform="translate(20, 85)" stroke-width="3" stroke-linecap="round" filter="url(#wg)">
+    <line x1="0" y1="0" x2="0" stroke="#FF0055"><animate attributeName="y1" values="-20;-35;-15;-40;-20" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y2" values="20;35;15;40;20" dur="1.2s" repeatCount="indefinite"/></line>
+    <line x1="8" y1="0" x2="8" stroke="#FF0055"><animate attributeName="y1" values="-15;-25;-40;-20;-15" dur="1.0s" repeatCount="indefinite"/><animate attributeName="y2" values="15;25;40;20;15" dur="1.0s" repeatCount="indefinite"/></line>
+    <line x1="16" y1="0" x2="16" stroke="#FF0055"><animate attributeName="y1" values="-30;-15;-25;-45;-30" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y2" values="30;15;25;45;30" dur="1.4s" repeatCount="indefinite"/></line>
+    <line x1="24" y1="0" x2="24" stroke="#FF0055"><animate attributeName="y1" values="-10;-40;-30;-15;-10" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y2" values="10;40;30;15;10" dur="0.9s" repeatCount="indefinite"/></line>
+    <line x1="32" y1="0" x2="32" stroke="#FF0055"><animate attributeName="y1" values="-35;-20;-10;-30;-35" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y2" values="35;20;10;30;35" dur="1.3s" repeatCount="indefinite"/></line>
+    <line x1="40" y1="0" x2="40" stroke="#FF0055"><animate attributeName="y1" values="-25;-45;-20;-35;-25" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y2" values="25;45;20;35;25" dur="1.1s" repeatCount="indefinite"/></line>
+    <line x1="48" y1="0" x2="48" stroke="#FF0055"><animate attributeName="y1" values="-40;-10;-35;-20;-40" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y2" values="40;10;35;20;40" dur="0.8s" repeatCount="indefinite"/></line>
+    <line x1="56" y1="0" x2="56" stroke="#FF0055"><animate attributeName="y1" values="-20;-30;-45;-25;-20" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y2" values="20;30;45;25;20" dur="1.5s" repeatCount="indefinite"/></line>
+    <line x1="64" y1="0" x2="64" stroke="#FF0055"><animate attributeName="y1" values="-45;-25;-15;-40;-45" dur="1.05s" repeatCount="indefinite"/><animate attributeName="y2" values="45;25;15;40;45" dur="1.05s" repeatCount="indefinite"/></line>
+    <line x1="72" y1="0" x2="72" stroke="#FF0055"><animate attributeName="y1" values="-15;-40;-30;-10;-15" dur="1.25s" repeatCount="indefinite"/><animate attributeName="y2" values="15;40;30;10;15" dur="1.25s" repeatCount="indefinite"/></line>
+    <line x1="80" y1="0" x2="80" stroke="#FF0055"><animate attributeName="y1" values="-30;-15;-45;-35;-30" dur="0.95s" repeatCount="indefinite"/><animate attributeName="y2" values="30;15;45;35;30" dur="0.95s" repeatCount="indefinite"/></line>
+    <line x1="88" y1="0" x2="88" stroke="#FF0055"><animate attributeName="y1" values="-35;-45;-20;-15;-35" dur="1.35s" repeatCount="indefinite"/><animate attributeName="y2" values="35;45;20;15;35" dur="1.35s" repeatCount="indefinite"/></line>
+
+    <!-- MIDDLE CLUSTER — LOUDER -->
+    <line x1="120" y1="0" x2="120" stroke="#FF0055"><animate attributeName="y1" values="-45;-30;-50;-35;-45" dur="0.85s" repeatCount="indefinite"/><animate attributeName="y2" values="45;30;50;35;45" dur="0.85s" repeatCount="indefinite"/></line>
+    <line x1="128" y1="0" x2="128" stroke="#FF0055"><animate attributeName="y1" values="-50;-40;-30;-50;-50" dur="1.15s" repeatCount="indefinite"/><animate attributeName="y2" values="50;40;30;50;50" dur="1.15s" repeatCount="indefinite"/></line>
+    <line x1="136" y1="0" x2="136" stroke="#FFFFFF"><animate attributeName="y1" values="-55;-35;-50;-45;-55" dur="0.75s" repeatCount="indefinite"/><animate attributeName="y2" values="55;35;50;45;55" dur="0.75s" repeatCount="indefinite"/></line>
+    <line x1="144" y1="0" x2="144" stroke="#FFFFFF"><animate attributeName="y1" values="-50;-55;-40;-50;-50" dur="1.0s" repeatCount="indefinite"/><animate attributeName="y2" values="50;55;40;50;50" dur="1.0s" repeatCount="indefinite"/></line>
+    <line x1="152" y1="0" x2="152" stroke="#FFFFFF"><animate attributeName="y1" values="-55;-45;-55;-35;-55" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y2" values="55;45;55;35;55" dur="0.9s" repeatCount="indefinite"/></line>
+    <line x1="160" y1="0" x2="160" stroke="#FF0055"><animate attributeName="y1" values="-45;-55;-35;-50;-45" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y2" values="45;55;35;50;45" dur="1.2s" repeatCount="indefinite"/></line>
+    <line x1="168" y1="0" x2="168" stroke="#FF0055"><animate attributeName="y1" values="-40;-30;-50;-45;-40" dur="0.7s" repeatCount="indefinite"/><animate attributeName="y2" values="40;30;50;45;40" dur="0.7s" repeatCount="indefinite"/></line>
+
+    <!-- RIGHT SIDE -->
+    <line x1="200" y1="0" x2="200" stroke="#FF0055"><animate attributeName="y1" values="-35;-20;-40;-25;-35" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y2" values="35;20;40;25;35" dur="1.1s" repeatCount="indefinite"/></line>
+    <line x1="208" y1="0" x2="208" stroke="#FF0055"><animate attributeName="y1" values="-25;-40;-15;-35;-25" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y2" values="25;40;15;35;25" dur="1.3s" repeatCount="indefinite"/></line>
+    <line x1="216" y1="0" x2="216" stroke="#FF0055"><animate attributeName="y1" values="-40;-15;-30;-20;-40" dur="0.95s" repeatCount="indefinite"/><animate attributeName="y2" values="40;15;30;20;40" dur="0.95s" repeatCount="indefinite"/></line>
+    <line x1="224" y1="0" x2="224" stroke="#FF0055"><animate attributeName="y1" values="-20;-35;-25;-40;-20" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y2" values="20;35;25;40;20" dur="1.4s" repeatCount="indefinite"/></line>
+    <line x1="232" y1="0" x2="232" stroke="#FF0055"><animate attributeName="y1" values="-30;-10;-40;-30;-30" dur="1.0s" repeatCount="indefinite"/><animate attributeName="y2" values="30;10;40;30;30" dur="1.0s" repeatCount="indefinite"/></line>
+    <line x1="240" y1="0" x2="240" stroke="#FF0055"><animate attributeName="y1" values="-15;-30;-20;-35;-15" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y2" values="15;30;20;35;15" dur="1.2s" repeatCount="indefinite"/></line>
+
+    <!-- SECOND CLUSTER -->
+    <line x1="272" y1="0" x2="272" stroke="#FF0055"><animate attributeName="y1" values="-40;-50;-30;-45;-40" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y2" values="40;50;30;45;40" dur="0.8s" repeatCount="indefinite"/></line>
+    <line x1="280" y1="0" x2="280" stroke="#FFFFFF"><animate attributeName="y1" values="-50;-35;-55;-40;-50" dur="1.05s" repeatCount="indefinite"/><animate attributeName="y2" values="50;35;55;40;50" dur="1.05s" repeatCount="indefinite"/></line>
+    <line x1="288" y1="0" x2="288" stroke="#FFFFFF"><animate attributeName="y1" values="-55;-50;-40;-55;-55" dur="0.85s" repeatCount="indefinite"/><animate attributeName="y2" values="55;50;40;55;55" dur="0.85s" repeatCount="indefinite"/></line>
+    <line x1="296" y1="0" x2="296" stroke="#FF0055"><animate attributeName="y1" values="-45;-30;-50;-40;-45" dur="1.15s" repeatCount="indefinite"/><animate attributeName="y2" values="45;30;50;40;45" dur="1.15s" repeatCount="indefinite"/></line>
+    <line x1="304" y1="0" x2="304" stroke="#FF0055"><animate attributeName="y1" values="-30;-45;-20;-35;-30" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y2" values="30;45;20;35;30" dur="0.9s" repeatCount="indefinite"/></line>
+
+    <!-- TAIL -->
+    <line x1="336" y1="0" x2="336" stroke="#FF0055"><animate attributeName="y1" values="-25;-15;-30;-20;-25" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y2" values="25;15;30;20;25" dur="1.3s" repeatCount="indefinite"/></line>
+    <line x1="344" y1="0" x2="344" stroke="#FF0055"><animate attributeName="y1" values="-15;-25;-10;-20;-15" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y2" values="15;25;10;20;15" dur="1.1s" repeatCount="indefinite"/></line>
+    <line x1="352" y1="0" x2="352" stroke="#FF0055"><animate attributeName="y1" values="-20;-10;-25;-15;-20" dur="0.95s" repeatCount="indefinite"/><animate attributeName="y2" values="20;10;25;15;20" dur="0.95s" repeatCount="indefinite"/></line>
+    <line x1="360" y1="0" x2="360" stroke="#FF0055"><animate attributeName="y1" values="-10;-20;-15;-25;-10" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y2" values="10;20;15;25;10" dur="1.4s" repeatCount="indefinite"/></line>
+
+    <!-- FAR TAIL -->
+    <line x1="392" y1="0" x2="392" stroke="#FF0055" opacity="0.6"><animate attributeName="y1" values="-10;-15;-5;-12;-10" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y2" values="10;15;5;12;10" dur="1.2s" repeatCount="indefinite"/></line>
+    <line x1="400" y1="0" x2="400" stroke="#FF0055" opacity="0.6"><animate attributeName="y1" values="-8;-12;-5;-10;-8" dur="1.0s" repeatCount="indefinite"/><animate attributeName="y2" values="8;12;5;10;8" dur="1.0s" repeatCount="indefinite"/></line>
+    <line x1="408" y1="0" x2="408" stroke="#FF0055" opacity="0.4"><animate attributeName="y1" values="-5;-8;-3;-6;-5" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y2" values="5;8;3;6;5" dur="1.3s" repeatCount="indefinite"/></line>
+    <line x1="416" y1="0" x2="416" stroke="#FF0055" opacity="0.3"><animate attributeName="y1" values="-3;-5;-2;-4;-3" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y2" values="3;5;2;4;3" dur="1.1s" repeatCount="indefinite"/></line>
+
+    <!-- CENTER LINE -->
+    <line x1="0" y1="0" x2="460" y2="0" stroke="#FF0055" stroke-width="0.5" opacity="0.15"/>
+  </g>
+</svg>

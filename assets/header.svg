@@ -1,148 +1,187 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="glitch">
-      <feOffset in="SourceGraphic" dx="2" dy="0" result="r">
-        <animate attributeName="dx" values="0;3;-2;0;4;-1;0" dur="0.4s" repeatCount="indefinite"/>
-      </feOffset>
-      <feOffset in="SourceGraphic" dx="-2" dy="0" result="b">
-        <animate attributeName="dx" values="0;-3;2;0;-4;1;0" dur="0.4s" repeatCount="indefinite"/>
-      </feOffset>
-      <feColorMatrix in="r" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="red"/>
-      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="blue"/>
-      <feBlend in="red" in2="blue" mode="screen" result="blend"/>
-      <feBlend in="blend" in2="SourceGraphic" mode="screen"/>
+      <feOffset in="SourceGraphic" dx="0" dy="0" result="r"><animate attributeName="dx" values="0;4;-3;0;5;-2;0;0;0;0;0;0;0;0;-3;4;0;0;0;0" dur="3s" repeatCount="indefinite"/></feOffset>
+      <feOffset in="SourceGraphic" dx="0" dy="0" result="b"><animate attributeName="dx" values="0;-4;3;0;-5;2;0;0;0;0;0;0;0;0;3;-4;0;0;0;0" dur="3s" repeatCount="indefinite"/></feOffset>
+      <feColorMatrix in="r" type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="red"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="blue"/>
+      <feBlend in="red" in2="blue" mode="screen" result="rb"/><feBlend in="rb" in2="SourceGraphic" mode="screen"/>
     </filter>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0D1117"/>
-      <stop offset="50%" style="stop-color:#0D1117"/>
-      <stop offset="100%" style="stop-color:#1a0a12"/>
-    </linearGradient>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:#FF0055"/>
-      <stop offset="100%" style="stop-color:transparent"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FF005510" stroke-width="0.5"/>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FF005508" stroke-width="0.5"/>
     </pattern>
-    <clipPath id="scanline-clip">
-      <rect x="0" y="0" width="1200" height="400"/>
-    </clipPath>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:0"/><stop offset="100%" style="stop-color:#000000;stop-opacity:0.7"/>
+    </radialGradient>
+    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/><stop offset="30%" style="stop-color:#FF0055"/><stop offset="70%" style="stop-color:#FF0055"/><stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
   </defs>
 
-  <!-- BACKGROUND -->
-  <rect width="1200" height="400" fill="url(#bgGrad)"/>
-  <rect width="1200" height="400" fill="url(#grid)"/>
+  <!-- DEEP BLACK BG -->
+  <rect width="1200" height="500" fill="#05080D"/>
+  <rect width="1200" height="500" fill="url(#grid)"/>
+  <rect width="1200" height="500" fill="url(#vignette)"/>
 
-  <!-- ANIMATED SCANLINES -->
-  <g opacity="0.06" clip-path="url(#scanline-clip)">
-    <rect width="1200" height="2" fill="#fff" y="0">
-      <animate attributeName="y" values="-2;400" dur="3s" repeatCount="indefinite"/>
-    </rect>
-    <rect width="1200" height="1" fill="#fff" y="0">
-      <animate attributeName="y" values="-2;400" dur="2.1s" repeatCount="indefinite"/>
-    </rect>
+  <!-- MATRIX RAIN — 40 columns of falling characters -->
+  <g font-family="monospace" font-size="11" opacity="0.07">
+    <text x="30" y="0" fill="#FF0055"><animate attributeName="y" values="-20;520" dur="4.2s" repeatCount="indefinite"/>01001</text>
+    <text x="70" y="0" fill="#FF0055"><animate attributeName="y" values="-80;520" dur="3.8s" repeatCount="indefinite"/>11010</text>
+    <text x="110" y="0" fill="#FF0055"><animate attributeName="y" values="-140;520" dur="5.1s" repeatCount="indefinite"/>00111</text>
+    <text x="150" y="0" fill="#FF0055"><animate attributeName="y" values="-30;520" dur="4.5s" repeatCount="indefinite"/>10110</text>
+    <text x="190" y="0" fill="#FF0055"><animate attributeName="y" values="-200;520" dur="3.9s" repeatCount="indefinite"/>01101</text>
+    <text x="230" y="0" fill="#FF0055"><animate attributeName="y" values="-90;520" dur="4.7s" repeatCount="indefinite"/>11001</text>
+    <text x="270" y="0" fill="#FF0055"><animate attributeName="y" values="-160;520" dur="5.3s" repeatCount="indefinite"/>00100</text>
+    <text x="310" y="0" fill="#FF0055"><animate attributeName="y" values="-50;520" dur="3.6s" repeatCount="indefinite"/>10011</text>
+    <text x="350" y="0" fill="#FF0055"><animate attributeName="y" values="-120;520" dur="4.9s" repeatCount="indefinite"/>01010</text>
+    <text x="390" y="0" fill="#FF0055"><animate attributeName="y" values="-10;520" dur="4.1s" repeatCount="indefinite"/>11100</text>
+    <text x="430" y="0" fill="#FF0055"><animate attributeName="y" values="-180;520" dur="5.5s" repeatCount="indefinite"/>00011</text>
+    <text x="470" y="0" fill="#FF0055"><animate attributeName="y" values="-70;520" dur="3.7s" repeatCount="indefinite"/>10101</text>
+    <text x="510" y="0" fill="#FF0055"><animate attributeName="y" values="-130;520" dur="4.4s" repeatCount="indefinite"/>01110</text>
+    <text x="550" y="0" fill="#FF0055"><animate attributeName="y" values="-40;520" dur="5.0s" repeatCount="indefinite"/>11011</text>
+    <text x="590" y="0" fill="#FF0055"><animate attributeName="y" values="-190;520" dur="3.5s" repeatCount="indefinite"/>00110</text>
+    <text x="630" y="0" fill="#FF0055"><animate attributeName="y" values="-100;520" dur="4.6s" repeatCount="indefinite"/>10000</text>
+    <text x="670" y="0" fill="#FF0055"><animate attributeName="y" values="-60;520" dur="5.2s" repeatCount="indefinite"/>01011</text>
+    <text x="710" y="0" fill="#FF0055"><animate attributeName="y" values="-150;520" dur="3.4s" repeatCount="indefinite"/>11110</text>
+    <text x="750" y="0" fill="#FF0055"><animate attributeName="y" values="-20;520" dur="4.8s" repeatCount="indefinite"/>00101</text>
+    <text x="790" y="0" fill="#FF0055"><animate attributeName="y" values="-110;520" dur="5.4s" repeatCount="indefinite"/>10010</text>
+    <text x="830" y="0" fill="#FF0055"><animate attributeName="y" values="-170;520" dur="3.3s" repeatCount="indefinite"/>01000</text>
+    <text x="870" y="0" fill="#FF0055"><animate attributeName="y" values="-80;520" dur="4.3s" repeatCount="indefinite"/>11101</text>
+    <text x="910" y="0" fill="#FF0055"><animate attributeName="y" values="-30;520" dur="5.6s" repeatCount="indefinite"/>00010</text>
+    <text x="950" y="0" fill="#FF0055"><animate attributeName="y" values="-140;520" dur="3.2s" repeatCount="indefinite"/>10111</text>
+    <text x="990" y="0" fill="#FF0055"><animate attributeName="y" values="-90;520" dur="4.0s" repeatCount="indefinite"/>01100</text>
+    <text x="1030" y="0" fill="#FF0055"><animate attributeName="y" values="-50;520" dur="5.7s" repeatCount="indefinite"/>11000</text>
+    <text x="1070" y="0" fill="#FF0055"><animate attributeName="y" values="-200;520" dur="3.1s" repeatCount="indefinite"/>00001</text>
+    <text x="1110" y="0" fill="#FF0055"><animate attributeName="y" values="-120;520" dur="4.5s" repeatCount="indefinite"/>10100</text>
+    <text x="1150" y="0" fill="#FF0055"><animate attributeName="y" values="-60;520" dur="5.8s" repeatCount="indefinite"/>01111</text>
   </g>
 
-  <!-- FLOATING PARTICLES -->
-  <circle cx="100" cy="80" r="1.5" fill="#FF0055" opacity="0.6">
-    <animate attributeName="cy" values="80;60;80" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="300" cy="320" r="1" fill="#FF0055" opacity="0.4">
-    <animate attributeName="cy" values="320;290;320" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="900" cy="100" r="2" fill="#FF0055" opacity="0.5">
-    <animate attributeName="cy" values="100;70;100" dur="3.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1050" cy="280" r="1.2" fill="#FF0055" opacity="0.3">
-    <animate attributeName="cy" values="280;250;280" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="500" cy="50" r="1" fill="#FF0055" opacity="0.5">
-    <animate attributeName="cy" values="50;30;50" dur="4.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="700" cy="350" r="1.5" fill="#FF0055" opacity="0.4">
-    <animate attributeName="cy" values="350;330;350" dur="3.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1100" cy="150" r="1" fill="#FF0055" opacity="0.6">
-    <animate attributeName="cy" values="150;130;150" dur="5.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="200" cy="200" r="0.8" fill="#00FFAA" opacity="0.3">
-    <animate attributeName="cy" values="200;180;200" dur="7s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- HORIZONTAL ACCENT LINES -->
-  <line x1="0" y1="130" x2="1200" y2="130" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.5"/>
-  <line x1="0" y1="270" x2="1200" y2="270" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.5"/>
-
-  <!-- CORNER DECORATIONS -->
-  <g stroke="#FF0055" stroke-width="1.5" fill="none" opacity="0.6">
-    <polyline points="30,60 30,30 60,30"/>
-    <polyline points="1140,30 1170,30 1170,60"/>
-    <polyline points="30,340 30,370 60,370"/>
-    <polyline points="1140,370 1170,370 1170,340"/>
+  <!-- SCANLINES -->
+  <g opacity="0.04">
+    <rect width="1200" height="2" fill="#fff" y="-2"><animate attributeName="y" values="-2;500" dur="2.5s" repeatCount="indefinite"/></rect>
+    <rect width="1200" height="1" fill="#fff" y="-2"><animate attributeName="y" values="-2;500" dur="1.7s" repeatCount="indefinite"/></rect>
+    <rect width="1200" height="1.5" fill="#fff" y="-2"><animate attributeName="y" values="-50;500" dur="3.2s" repeatCount="indefinite"/></rect>
   </g>
 
-  <!-- SIDE STATUS INDICATORS -->
-  <g fill="#FF0055" opacity="0.5">
-    <rect x="35" y="80" width="3" height="3" rx="0.5">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="35" y="90" width="3" height="3" rx="0.5">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="35" y="100" width="3" height="3" rx="0.5">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
-    </rect>
+  <!-- FLOATING PARTICLES — 20 particles -->
+  <g fill="#FF0055">
+    <circle cx="80" cy="60" r="1.5" opacity="0.5"><animate attributeName="cy" values="60;30;60" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="400" r="1" opacity="0.3"><animate attributeName="cy" values="400;360;400" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="90" r="2" opacity="0.4"><animate attributeName="cy" values="90;50;90" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="450" r="1.2" opacity="0.6"><animate attributeName="cy" values="450;420;450" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="40" r="1" opacity="0.5"><animate attributeName="cy" values="40;15;40" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="380" r="1.8" opacity="0.3"><animate attributeName="cy" values="380;340;380" dur="5.5s" repeatCount="indefinite"/></circle>
+    <circle cx="920" cy="70" r="1.3" opacity="0.4"><animate attributeName="cy" values="70;35;70" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1050" cy="420" r="1" opacity="0.5"><animate attributeName="cy" values="420;390;420" dur="6.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1130" cy="120" r="1.5" opacity="0.3"><animate attributeName="cy" values="120;80;120" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="250" r="0.8" opacity="0.4"><animate attributeName="cy" values="250;220;250" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="200" r="1" opacity="0.5"><animate attributeName="cy" values="200;170;200" dur="5.2s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="300" r="1.5" opacity="0.3"><animate attributeName="cy" values="300;265;300" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="180" r="0.7" opacity="0.6"><animate attributeName="cy" values="180;155;180" dur="6.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="350" r="1.2" opacity="0.4"><animate attributeName="cy" values="350;310;350" dur="3.3s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#00FFAA" opacity="0.15">
+    <circle cx="300" cy="150" r="0.8"><animate attributeName="cy" values="150;120;150" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="430" r="0.6"><animate attributeName="cy" values="430;410;430" dur="7.5s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="250" r="0.9"><animate attributeName="cy" values="250;220;250" dur="8.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1100" cy="60" r="0.7"><animate attributeName="cy" values="60;40;60" dur="6.2s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- TOP STATUS TEXT -->
-  <text x="60" y="26" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.5">SYS.STATUS: ONLINE</text>
-  <text x="1010" y="26" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.5">
-    PID:7747 | GPU:ACTIVE
-    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+  <!-- HUD FRAME CORNERS -->
+  <g stroke="#FF0055" stroke-width="2" fill="none" opacity="0.7" filter="url(#glow2)">
+    <polyline points="25,65 25,25 65,25"/>
+    <polyline points="1135,25 1175,25 1175,65"/>
+    <polyline points="25,435 25,475 65,475"/>
+    <polyline points="1135,475 1175,475 1175,435"/>
+  </g>
+
+  <!-- OUTER HUD TICKS -->
+  <g stroke="#FF0055" stroke-width="1" opacity="0.2">
+    <line x1="100" y1="25" x2="130" y2="25"/><line x1="200" y1="25" x2="220" y2="25"/>
+    <line x1="300" y1="25" x2="310" y2="25"/><line x1="400" y1="25" x2="440" y2="25"/>
+    <line x1="760" y1="25" x2="800" y2="25"/><line x1="900" y1="25" x2="910" y2="25"/>
+    <line x1="1000" y1="25" x2="1020" y2="25"/><line x1="1060" y1="25" x2="1100" y2="25"/>
+    <line x1="100" y1="475" x2="130" y2="475"/><line x1="200" y1="475" x2="220" y2="475"/>
+    <line x1="900" y1="475" x2="910" y2="475"/><line x1="1060" y1="475" x2="1100" y2="475"/>
+    <line x1="25" y1="100" x2="25" y2="120"/><line x1="25" y1="200" x2="25" y2="210"/>
+    <line x1="25" y1="300" x2="25" y2="310"/><line x1="25" y1="380" x2="25" y2="400"/>
+    <line x1="1175" y1="100" x2="1175" y2="120"/><line x1="1175" y1="200" x2="1175" y2="210"/>
+    <line x1="1175" y1="300" x2="1175" y2="310"/><line x1="1175" y1="380" x2="1175" y2="400"/>
+  </g>
+
+  <!-- LEFT SIDE STATUS INDICATORS -->
+  <g>
+    <rect x="35" y="85" width="4" height="4" fill="#FF0055" opacity="0.6" rx="1"><animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="35" y="97" width="4" height="4" fill="#FF0055" opacity="0.4" rx="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="35" y="109" width="4" height="4" fill="#FF0055" opacity="0.7" rx="1"><animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/></rect>
+    <rect x="35" y="121" width="4" height="4" fill="#3fb950" opacity="0.5" rx="1"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite"/></rect>
+    <rect x="35" y="133" width="4" height="4" fill="#3fb950" opacity="0.6" rx="1"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.0s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- RIGHT SIDE MINI WAVEFORM -->
+  <g stroke="#FF0055" stroke-width="1.5" fill="none" opacity="0.3" transform="translate(1140, 80)">
+    <line x1="0" y1="0" x2="0" y2="10"><animate attributeName="y2" values="10;20;10;5;10" dur="1.2s" repeatCount="indefinite"/></line>
+    <line x1="6" y1="0" x2="6" y2="15"><animate attributeName="y2" values="15;5;15;25;15" dur="1.0s" repeatCount="indefinite"/></line>
+    <line x1="12" y1="0" x2="12" y2="8"><animate attributeName="y2" values="8;18;8;3;8" dur="1.4s" repeatCount="indefinite"/></line>
+    <line x1="18" y1="0" x2="18" y2="20"><animate attributeName="y2" values="20;10;20;5;20" dur="0.9s" repeatCount="indefinite"/></line>
+    <line x1="24" y1="0" x2="24" y2="12"><animate attributeName="y2" values="12;22;12;7;12" dur="1.3s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- TOP STATUS BAR -->
+  <text x="75" y="18" font-family="monospace" font-size="9" fill="#FF0055" opacity="0.4">SYS.ONLINE</text>
+  <text x="180" y="18" font-family="monospace" font-size="9" fill="#3fb950" opacity="0.4">▪ GPU.ACTIVE</text>
+  <text x="310" y="18" font-family="monospace" font-size="9" fill="#3fb950" opacity="0.4">▪ SHADER.COMPILED</text>
+
+  <text x="940" y="18" font-family="monospace" font-size="9" fill="#FF0055" opacity="0.35">
+    PID:7747 | FPS:144 | VRAM:OK
+    <animate attributeName="opacity" values="0.35;0.6;0.35" dur="3s" repeatCount="indefinite"/>
   </text>
 
-  <!-- MAIN TITLE WITH GLITCH -->
+  <!-- HORIZONTAL NEON LINES -->
+  <line x1="0" y1="155" x2="1200" y2="155" stroke="url(#neonLine)" stroke-width="0.3" opacity="0.4"/>
+  <line x1="0" y1="345" x2="1200" y2="345" stroke="url(#neonLine)" stroke-width="0.3" opacity="0.4"/>
+
+  <!-- ═══════════ MAIN TITLE ═══════════ -->
   <g filter="url(#glitch)">
-    <text x="600" y="175" text-anchor="middle" font-family="monospace" font-weight="900" font-size="72" fill="#FFFFFF" filter="url(#glow)" letter-spacing="12">
-      FROZEN FLAME
+    <text x="600" y="228" text-anchor="middle" font-family="monospace" font-weight="900" font-size="90" fill="#FFFFFF" filter="url(#glow)" letter-spacing="16">
+      FROZEN
+    </text>
+    <text x="600" y="310" text-anchor="middle" font-family="monospace" font-weight="900" font-size="90" fill="#FFFFFF" filter="url(#glow)" letter-spacing="16">
+      FLAME
     </text>
   </g>
 
-  <!-- SUBTITLE -->
-  <text x="600" y="220" text-anchor="middle" font-family="monospace" font-weight="400" font-size="16" fill="#FF0055" letter-spacing="8" opacity="0.9">
+  <!-- SUBTITLE LINE -->
+  <line x1="380" y1="330" x2="820" y2="330" stroke="#FF0055" stroke-width="1" opacity="0.6" filter="url(#glow2)"/>
+
+  <text x="600" y="355" text-anchor="middle" font-family="monospace" font-weight="400" font-size="14" fill="#FF0055" letter-spacing="10" opacity="0.9" filter="url(#glow2)">
     SENIOR CREATIVE DEVELOPER
   </text>
 
-  <!-- ANIMATED TAGLINE -->
-  <text x="600" y="265" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e" letter-spacing="3">
-    ▸ WE DON'T BUILD WEBSITES — WE BUILD DIMENSIONS ◂
+  <!-- TAGLINE -->
+  <text x="600" y="395" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e" letter-spacing="2" opacity="0.7">
+    We don't build websites — we build dimensions that melt screens
   </text>
 
-  <!-- PULSING DOT -->
-  <circle cx="600" cy="300" r="3" fill="#FF0055">
-    <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  <!-- CENTRAL PULSING ORB -->
+  <circle cx="600" cy="425" r="2" fill="#FF0055" filter="url(#glow)">
+    <animate attributeName="r" values="2;5;2" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="425" r="8" fill="none" stroke="#FF0055" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" values="8;16;8" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0;0.2" dur="2.5s" repeatCount="indefinite"/>
   </circle>
 
   <!-- BOTTOM STATUS BAR -->
-  <rect x="0" y="380" width="1200" height="20" fill="#0a0a0a" opacity="0.8"/>
-  <text x="20" y="394" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.6">
-    ▪ WEBGL ▪ THREE.JS ▪ GLSL ▪ REACT ▪ TYPESCRIPT ▪ BLENDER ▪ AI RIGGING ▪ PROCEDURAL GENERATION ▪ WASM
+  <rect x="0" y="478" width="1200" height="22" fill="#030508" opacity="0.9"/>
+  <text x="20" y="493" font-family="monospace" font-size="9" fill="#FF0055" opacity="0.5" letter-spacing="1">
+    ▪ WEBGL  ▪ THREE.JS  ▪ GLSL  ▪ REACT  ▪ TYPESCRIPT  ▪ BLENDER  ▪ AI RIGGING  ▪ WASM  ▪ PROCEDURAL GENERATION
   </text>
-  <text x="1100" y="394" font-family="monospace" font-size="10" fill="#FF0055" opacity="0.4">
-    v3.0
-    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="1.5s" repeatCount="indefinite"/>
+  <text x="1130" y="493" font-family="monospace" font-size="9" fill="#3fb950" opacity="0.4">
+    ● LIVE
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.5s" repeatCount="indefinite"/>
   </text>
 </svg>
