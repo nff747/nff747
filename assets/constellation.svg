@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+  <defs>
+    <filter id="ng"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ng2"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="900" height="400" fill="#05080D" rx="10"/>
+  <rect x="1" y="1" width="898" height="398" rx="10" fill="none" stroke="#FF005515" stroke-width="0.5"/>
+
+  <!-- TITLE -->
+  <text x="450" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#FF0055" letter-spacing="4" opacity="0.7">[ NEURAL NETWORK — TECH CONSTELLATION ]</text>
+
+  <!-- CONNECTION LINES (drawn first, behind nodes) -->
+  <g stroke="#FF0055" stroke-width="0.8" opacity="0.15" filter="url(#ng)">
+    <!-- WebGL hub connections -->
+    <line x1="450" y1="110" x2="250" y2="180"/><line x1="450" y1="110" x2="650" y2="180"/>
+    <line x1="450" y1="110" x2="450" y2="200"/><line x1="450" y1="110" x2="300" y2="100"/>
+    <line x1="450" y1="110" x2="600" y2="100"/>
+    <!-- Three.js connections -->
+    <line x1="250" y1="180" x2="150" y2="270"/><line x1="250" y1="180" x2="300" y2="280"/>
+    <line x1="250" y1="180" x2="450" y2="200"/>
+    <!-- React connections -->
+    <line x1="650" y1="180" x2="750" y2="270"/><line x1="650" y1="180" x2="600" y2="280"/>
+    <line x1="650" y1="180" x2="450" y2="200"/>
+    <!-- GLSL connections -->
+    <line x1="450" y1="200" x2="450" y2="310"/>
+    <!-- Cross connections -->
+    <line x1="300" y1="100" x2="150" y2="270"/>
+    <line x1="600" y1="100" x2="750" y2="270"/>
+    <line x1="300" y1="280" x2="450" y2="310"/>
+    <line x1="600" y1="280" x2="450" y2="310"/>
+    <line x1="150" y1="270" x2="300" y2="350"/>
+    <line x1="750" y1="270" x2="600" y2="350"/>
+    <line x1="300" y1="350" x2="450" y2="310"/>
+    <line x1="600" y1="350" x2="450" y2="310"/>
+  </g>
+
+  <!-- DATA PULSES traveling along lines -->
+  <g fill="#FF0055" opacity="0.6">
+    <circle r="2" filter="url(#ng2)"><animateMotion dur="3s" repeatCount="indefinite" path="M450,110 L250,180"/></circle>
+    <circle r="2" filter="url(#ng2)"><animateMotion dur="4s" repeatCount="indefinite" path="M450,110 L650,180"/></circle>
+    <circle r="1.5" filter="url(#ng2)"><animateMotion dur="3.5s" repeatCount="indefinite" path="M250,180 L150,270"/></circle>
+    <circle r="1.5" filter="url(#ng2)"><animateMotion dur="4.5s" repeatCount="indefinite" path="M650,180 L750,270"/></circle>
+    <circle r="2" filter="url(#ng2)"><animateMotion dur="5s" repeatCount="indefinite" path="M450,200 L450,310"/></circle>
+    <circle r="1.5" filter="url(#ng2)"><animateMotion dur="3.8s" repeatCount="indefinite" path="M300,280 L450,310"/></circle>
+    <circle r="1.5" filter="url(#ng2)"><animateMotion dur="4.2s" repeatCount="indefinite" path="M600,280 L450,310"/></circle>
+    <circle r="1.5" filter="url(#ng2)"><animateMotion dur="6s" repeatCount="indefinite" path="M300,100 L150,270"/></circle>
+  </g>
+
+  <!-- ══════ NODES ══════ -->
+
+  <!-- WEBGL — Central Hub (largest) -->
+  <g transform="translate(450,110)">
+    <circle r="30" fill="#0A0E14" stroke="#FF0055" stroke-width="1.5" filter="url(#ng)"/>
+    <circle r="35" fill="none" stroke="#FF0055" stroke-width="0.5" opacity="0.2"><animate attributeName="r" values="35;42;35" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="10" fill="#FFFFFF" font-weight="bold">WebGL</text>
+  </g>
+
+  <!-- THREE.JS -->
+  <g transform="translate(250,180)">
+    <circle r="25" fill="#0A0E14" stroke="#FF0055" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="30" fill="none" stroke="#FF0055" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="30;36;30" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="4s" repeatCount="indefinite"/></circle>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF" font-weight="bold">Three.js</text>
+  </g>
+
+  <!-- REACT -->
+  <g transform="translate(650,180)">
+    <circle r="25" fill="#0A0E14" stroke="#61DAFB" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="30" fill="none" stroke="#61DAFB" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="30;36;30" dur="3.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="3.5s" repeatCount="indefinite"/></circle>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#61DAFB" font-weight="bold">React</text>
+  </g>
+
+  <!-- GLSL -->
+  <g transform="translate(450,200)">
+    <circle r="20" fill="#0A0E14" stroke="#FF0055" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">GLSL</text>
+  </g>
+
+  <!-- TYPESCRIPT -->
+  <g transform="translate(600,100)">
+    <circle r="22" fill="#0A0E14" stroke="#3178C6" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="27" fill="none" stroke="#3178C6" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="27;33;27" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="5s" repeatCount="indefinite"/></circle>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="8" fill="#3178C6" font-weight="bold">TypeScript</text>
+  </g>
+
+  <!-- VITE -->
+  <g transform="translate(300,100)">
+    <circle r="18" fill="#0A0E14" stroke="#646CFF" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#646CFF">Vite</text>
+  </g>
+
+  <!-- BLENDER -->
+  <g transform="translate(150,270)">
+    <circle r="24" fill="#0A0E14" stroke="#EA7600" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="29" fill="none" stroke="#EA7600" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="29;35;29" dur="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="4.5s" repeatCount="indefinite"/></circle>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#EA7600" font-weight="bold">Blender</text>
+  </g>
+
+  <!-- DOCKER -->
+  <g transform="translate(750,270)">
+    <circle r="20" fill="#0A0E14" stroke="#2496ED" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#2496ED">Docker</text>
+  </g>
+
+  <!-- AI RIGGING -->
+  <g transform="translate(300,280)">
+    <circle r="22" fill="#0A0E14" stroke="#3fb950" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="27" fill="none" stroke="#3fb950" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="27;33;27" dur="3.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="3.8s" repeatCount="indefinite"/></circle>
+    <text y="-2" text-anchor="middle" font-family="monospace" font-size="8" fill="#3fb950" font-weight="bold">AI</text>
+    <text y="10" text-anchor="middle" font-family="monospace" font-size="7" fill="#3fb950">Rigging</text>
+  </g>
+
+  <!-- RUST -->
+  <g transform="translate(600,280)">
+    <circle r="20" fill="#0A0E14" stroke="#DEA584" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#DEA584">Rust</text>
+  </g>
+
+  <!-- PROCEDURAL GEN — bottom center hub -->
+  <g transform="translate(450,310)">
+    <circle r="24" fill="#0A0E14" stroke="#d2a8ff" stroke-width="1" filter="url(#ng2)"/>
+    <circle r="29" fill="none" stroke="#d2a8ff" stroke-width="0.3" opacity="0.15"><animate attributeName="r" values="29;35;29" dur="4.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.15;0;0.15" dur="4.2s" repeatCount="indefinite"/></circle>
+    <text y="-2" text-anchor="middle" font-family="monospace" font-size="7" fill="#d2a8ff" font-weight="bold">Procedural</text>
+    <text y="9" text-anchor="middle" font-family="monospace" font-size="7" fill="#d2a8ff">Gen</text>
+  </g>
+
+  <!-- WASM -->
+  <g transform="translate(300,350)">
+    <circle r="16" fill="#0A0E14" stroke="#654FF0" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="8" fill="#654FF0">WASM</text>
+  </g>
+
+  <!-- PYTHON -->
+  <g transform="translate(600,350)">
+    <circle r="16" fill="#0A0E14" stroke="#3572A5" stroke-width="1" filter="url(#ng2)"/>
+    <text y="4" text-anchor="middle" font-family="monospace" font-size="8" fill="#3572A5">Python</text>
+  </g>
+
+  <!-- Ambient floating particles -->
+  <g fill="#FF0055" opacity="0.15">
+    <circle cx="80" cy="60" r="1"><animate attributeName="cy" values="60;40;60" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="380" r="1"><animate attributeName="cy" values="380;360;380" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="50" cy="350" r="0.8"><animate attributeName="cy" values="350;330;350" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="70" r="0.8"><animate attributeName="cy" values="70;50;70" dur="7s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

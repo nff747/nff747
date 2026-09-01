@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <filter id="bg"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="900" height="280" fill="#05080D" rx="8"/>
+  <rect x="1" y="1" width="898" height="278" rx="8" fill="none" stroke="#FF005515" stroke-width="0.5"/>
+
+  <!-- SCANLINE -->
+  <rect width="900" height="1" fill="#FFFFFF" opacity="0.02" y="0"><animate attributeName="y" values="0;280" dur="1.8s" repeatCount="indefinite"/></rect>
+
+  <!-- TOP LABEL -->
+  <text x="20" y="22" font-family="monospace" font-size="9" fill="#5c6370" letter-spacing="2">SYSTEM BOOT v3.0</text>
+  <circle cx="880" cy="17" r="3" fill="#3fb950"><animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/></circle>
+
+  <!-- LINE 1 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="0.3s"/>
+    <text x="20" y="52" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="52" font-family="monospace" font-size="12.5" fill="#FF0055">INITIALIZING</text>
+    <text x="160" y="52" font-family="monospace" font-size="12.5" fill="#c9d1d9"> FROZEN FLAME OS v3.0</text>
+    <text x="420" y="52" font-family="monospace" font-size="12.5" fill="#5c6370">............</text>
+    <text x="530" y="52" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="1.0s"/>ONLINE</text>
+  </g>
+
+  <!-- LINE 2 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="1.3s"/>
+    <text x="20" y="78" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="78" font-family="monospace" font-size="12.5" fill="#FF0055">LOADING</text>
+    <text x="110" y="78" font-family="monospace" font-size="12.5" fill="#c9d1d9"> GPU DRIVERS</text>
+    <text x="260" y="78" font-family="monospace" font-size="12.5" fill="#5c6370">..................</text>
+    <text x="530" y="78" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="2.0s"/>OK</text>
+  </g>
+
+  <!-- LINE 3 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="2.3s"/>
+    <text x="20" y="104" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="104" font-family="monospace" font-size="12.5" fill="#FF0055">COMPILING</text>
+    <text x="130" y="104" font-family="monospace" font-size="12.5" fill="#c9d1d9"> GLSL SHADERS</text>
+    <text x="290" y="104" font-family="monospace" font-size="12.5" fill="#5c6370">................</text>
+    <text x="530" y="104" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="3.0s"/>COMPILED</text>
+  </g>
+
+  <!-- LINE 4 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="3.3s"/>
+    <text x="20" y="130" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="130" font-family="monospace" font-size="12.5" fill="#FF0055">MOUNTING</text>
+    <text x="122" y="130" font-family="monospace" font-size="12.5" fill="#c9d1d9"> 3D PIPELINE</text>
+    <text x="270" y="130" font-family="monospace" font-size="12.5" fill="#5c6370">..................</text>
+    <text x="530" y="130" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="4.0s"/>MOUNTED</text>
+  </g>
+
+  <!-- LINE 5 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="4.3s"/>
+    <text x="20" y="156" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="156" font-family="monospace" font-size="12.5" fill="#FF0055">ESTABLISHING</text>
+    <text x="160" y="156" font-family="monospace" font-size="12.5" fill="#c9d1d9"> AI RIGGING LINK</text>
+    <text x="335" y="156" font-family="monospace" font-size="12.5" fill="#5c6370">..............</text>
+    <text x="530" y="156" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="5.0s"/>SYNCED</text>
+  </g>
+
+  <!-- LINE 6 -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="5.3s"/>
+    <text x="20" y="182" font-family="monospace" font-size="12.5" fill="#5c6370">❯ </text>
+    <text x="38" y="182" font-family="monospace" font-size="12.5" fill="#FF0055">RENDERING</text>
+    <text x="135" y="182" font-family="monospace" font-size="12.5" fill="#c9d1d9"> PROCEDURAL UNIVERSE</text>
+    <text x="360" y="182" font-family="monospace" font-size="12.5" fill="#5c6370">............</text>
+    <text x="530" y="182" font-family="monospace" font-size="12.5" fill="#3fb950" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="6.0s"/>RENDERED</text>
+  </g>
+
+  <!-- SEPARATOR -->
+  <line x1="20" y1="200" x2="880" y2="200" stroke="#FF005520" stroke-width="0.5" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="6.5s"/>
+  </line>
+
+  <!-- FINAL LINE — WELCOME -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" fill="freeze" begin="7.0s"/>
+    <text x="20" y="228" font-family="monospace" font-size="14" fill="#FFFFFF" filter="url(#bg)" font-weight="bold">
+      ALL SYSTEMS NOMINAL. WELCOME, OPERATOR.
+    </text>
+  </g>
+
+  <!-- READY INDICATOR -->
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" fill="freeze" begin="7.5s"/>
+    <text x="20" y="258" font-family="monospace" font-size="12.5" fill="#FF0055">❯</text>
+    <rect x="38" y="245" width="9" height="16" fill="#FF0055"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>

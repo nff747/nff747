@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <filter id="sg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sg2"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="900" height="120" fill="#05080D" rx="8"/>
+
+  <!-- GLITCH BARS -->
+  <rect x="0" y="35" width="900" height="2" fill="#FF0055" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.1;0;0;0;0;0;0.05;0;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="35;60;35;80;35" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="0" y="75" width="900" height="1" fill="#FFFFFF" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.03;0;0;0;0;0.02;0;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- LEFT BRACKET -->
+  <g stroke="#FF0055" stroke-width="1.5" fill="none" opacity="0.6" filter="url(#sg2)">
+    <polyline points="15,25 15,15 25,15"/>
+    <polyline points="15,95 15,105 25,105"/>
+  </g>
+
+  <!-- RIGHT BRACKET -->
+  <g stroke="#FF0055" stroke-width="1.5" fill="none" opacity="0.6" filter="url(#sg2)">
+    <polyline points="875,15 885,15 885,25"/>
+    <polyline points="875,105 885,105 885,95"/>
+  </g>
+
+  <!-- STATUS DOTS LEFT -->
+  <circle cx="35" cy="20" r="2.5" fill="#FF0055" filter="url(#sg2)"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+  <circle cx="35" cy="100" r="2.5" fill="#3fb950" filter="url(#sg2)"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+
+  <!-- HORIZONTAL ACCENT LINES -->
+  <line x1="50" y1="60" x2="250" y2="60" stroke="#FF0055" stroke-width="0.5" opacity="0.15" filter="url(#sg)"/>
+  <line x1="650" y1="60" x2="850" y2="60" stroke="#FF0055" stroke-width="0.5" opacity="0.15" filter="url(#sg)"/>
+
+  <!-- DIAMOND LEFT -->
+  <polygon points="260,55 265,60 260,65 255,60" fill="#FF0055" opacity="0.5" filter="url(#sg)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- DIAMOND RIGHT -->
+  <polygon points="640,55 645,60 640,65 635,60" fill="#FF0055" opacity="0.5" filter="url(#sg)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- SECTION TITLE SLOT — this is a template, the text changes per section -->
+  <!-- Using ◆ as decorative brackets -->
+  <text x="450" y="50" text-anchor="middle" font-family="monospace" font-size="11" fill="#5c6370" letter-spacing="6" filter="url(#sg2)">SECTION_LABEL</text>
+  <text x="450" y="75" text-anchor="middle" font-family="monospace" font-size="18" fill="#FFFFFF" font-weight="bold" letter-spacing="4" filter="url(#sg)">SECTION_TITLE</text>
+</svg>
