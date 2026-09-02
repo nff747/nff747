@@ -1,57 +1,26 @@
 <div align="center">
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT I — THE ARRIVAL                                           -->
+<!-- HERO // CYBERPUNK IDENTITY                                   -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
 <img src="./assets/header.svg" width="100%" alt="Cyberpunk Glitch Header"/>
 
-<br>
-
-
 <br><br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT II — IDENTITY                                             -->
+<!-- SYSTEM SPECS & RADAR COCKPIT (HIGH DENSITY 2-COLUMN)         -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
-<img src="./assets/section_01.svg" width="90%" alt="Identity Section"/>
-
-<br><br>
-
-<img src="./assets/terminal.svg" width="85%" alt="Identity Terminal"/>
-
-<br><br>
-
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT III — THE NEURAL NETWORK                                  -->
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
-<img src="./assets/section_02.svg" width="90%" alt="Neural Network Section"/>
-
-<br><br>
-
-<img src="./assets/constellation.svg" width="90%" alt="Constellation Architecture"/>
-
-<br><br>
-
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT IV — THREAT ASSESSMENT                                    -->
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
-<img src="./assets/section_03.svg" width="90%" alt="Threat Assessment Section"/>
-
-<br><br>
 
 <table>
 <tr>
-<td align="center" width="50%">
-<img src="./assets/radar.svg" width="100%" alt="Radar Scan"/>
+<td align="center" width="55%" valign="top">
+  <img src="./assets/terminal.svg" width="100%" alt="Identity Terminal"/>
 </td>
-<td align="center" width="50%">
-<img src="./assets/waveform.svg" width="100%" alt="Audio Waveform"/>
-<br><br>
-<img src="./assets/skills.svg" width="100%" alt="Skills Matrix"/>
+<td align="center" width="45%" valign="top">
+  <img src="./assets/radar.svg" width="90%" alt="Radar Scan"/>
+  <br>
+  <img src="./assets/skills.svg" width="100%" alt="Skills Matrix"/>
 </td>
 </tr>
 </table>
@@ -59,38 +28,8 @@
 <br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT V — TELEMETRY (REAL-TIME AUTO-UPDATING METRICS)           -->
+<!-- 6 FLAGSHIP DEEP-TECH ENGINES (PRODUCTIONS)                    -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
-<img src="./assets/section_04.svg" width="90%" alt="Telemetry Section"/>
-
-<br><br>
-
-<table>
-<tr>
-<td align="center" width="50%">
-<img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=nff747&show_icons=true&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9&ring_color=FF0055" alt="GitHub Stats"/>
-</td>
-<td align="center" width="50%">
-<img width="100%" src="https://streak-stats.demolab.com/?user=nff747&theme=radical&hide_border=true&background=05080D&stroke=FF005530&ring=FF0055&fire=FF0055&currStreakLabel=FF0055&sideLabels=c9d1d9&dates=5c6370&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak Stats"/>
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-<img width="60%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
-</td>
-</tr>
-</table>
-
-<br><br>
-
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT VI — CAMPAIGN ACHIEVEMENTS (DEPLOYED ENGINES & ARTIFACTS) -->
-<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-
-<img src="./assets/section_05.svg" width="90%" alt="Achievements Section"/>
-
-<br><br>
 
 <table>
 <tr>
@@ -131,25 +70,35 @@
 </tr>
 </table>
 
-<br><br>
+<br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- ACT VII — ECOSYSTEM CONTRIBUTION MAP (LIVE HEATMAP)           -->
+<!-- TELEMETRY & REAL-TIME ACTIVITY                                -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-<img src="./assets/section_06.svg" width="90%" alt="Contribution Map Section"/>
+<table>
+<tr>
+<td align="center" width="50%">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=nff747&show_icons=true&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9&ring_color=FF0055" alt="GitHub Stats"/>
+</td>
+<td align="center" width="50%">
+  <img width="100%" src="https://streak-stats.demolab.com/?user=nff747&theme=radical&hide_border=true&background=05080D&stroke=FF005530&ring=FF0055&fire=FF0055&currStreakLabel=FF0055&sideLabels=c9d1d9&dates=5c6370&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak Stats"/>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+  <img width="50%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
+</td>
+</tr>
+</table>
 
-<br><br>
-
-<img src="https://ghchart.rshah.org/FF0055/nff747" width="95%" alt="Live Real-time Contribution Graph" style="background-color: #05080D; padding: 15px; border-radius: 8px; border: 1px solid #FF005530;"/>
-
-<br><br>
+<br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- EPILOGUE — SIGNAL LOST                                        -->
+<!-- LIVE REAL-TIME CONTRIBUTION HEATMAP                           -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-<img src="./assets/signal_lost.svg" width="90%" alt="Signal Lost"/>
+<img src="https://ghchart.rshah.org/FF0055/nff747" width="95%" alt="Live Real-time Contribution Graph" style="background-color: #05080D; padding: 12px; border-radius: 8px; border: 1px solid #FF005530;"/>
 
 <br><br>
 
@@ -159,4 +108,4 @@
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0055,50:0D1117,100:05080D&height=100&section=footer" alt="Waving Footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0055,50:0D1117,100:05080D&height=80&section=footer" alt="Waving Footer"/>
