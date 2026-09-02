@@ -72,7 +72,6 @@
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nff747&bg_color=05080D&color=FF0055&line=FF0055&point=FFFFFF&area=true&area_color=FF005530&hide_border=true&custom_title=SIGNAL%20FREQUENCY" width="95%"/>
 
 <br>
 
@@ -84,7 +83,6 @@
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=nff747&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10" width="100%"/>
 
 <br>
 
@@ -97,9 +95,9 @@
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/nff747/nff747/blob/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/nff747/nff747/blob/output/github-snake.svg"/>
-  <img alt="Snake" src="https://github.com/nff747/nff747/blob/output/github-snake-dark.svg" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nff747/nff747/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nff747/nff747/output/github-snake.svg"/>
+  <img alt="Snake" src="https://raw.githubusercontent.com/nff747/nff747/output/github-snake-dark.svg" width="100%"/>
 </picture>
 
 <br>
