@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- HERO // CYBERPUNK IDENTITY                                   -->
+<!-- HERO BANNER // THE ARRIVAL                                    -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
 <img src="./assets/header.svg" width="100%" alt="Cyberpunk Glitch Header"/>
@@ -9,27 +9,24 @@
 <br><br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- SYSTEM SPECS & RADAR COCKPIT (HIGH DENSITY 2-COLUMN)         -->
+<!-- IDENTITY // SYSTEM MANIFEST                                   -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-<table>
-<tr>
-<td align="center" width="55%" valign="top">
-  <img src="./assets/terminal.svg" width="100%" alt="Identity Terminal"/>
-</td>
-<td align="center" width="45%" valign="top">
-  <img src="./assets/radar.svg" width="90%" alt="Radar Scan"/>
-  <br>
-  <img src="./assets/skills.svg" width="100%" alt="Skills Matrix"/>
-</td>
-</tr>
-</table>
+<img src="./assets/section_01.svg" width="85%" alt="Identity Section"/>
 
-<br>
+<br><br>
+
+<img src="./assets/terminal.svg" width="85%" alt="Identity Terminal"/>
+
+<br><br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 <!-- 6 FLAGSHIP DEEP-TECH ENGINES (PRODUCTIONS)                    -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_05.svg" width="85%" alt="Achievements Section"/>
+
+<br><br>
 
 <table>
 <tr>
@@ -70,11 +67,38 @@
 </tr>
 </table>
 
-<br>
+<br><br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- TELEMETRY & REAL-TIME ACTIVITY                                -->
+<!-- HARDWARE & RADAR TELEMETRY                                    -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_03.svg" width="85%" alt="Threat Assessment Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center">
+  <img src="./assets/radar.svg" width="420" alt="Radar Scan"/>
+</td>
+<td align="center">
+  <img src="./assets/waveform.svg" width="420" alt="Audio Waveform"/>
+  <br><br>
+  <img src="./assets/skills.svg" width="420" alt="Skills Matrix"/>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- LIVE TELEMETRY & ACTIVITY                                     -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_04.svg" width="85%" alt="Telemetry Section"/>
+
+<br><br>
 
 <table>
 <tr>
@@ -87,18 +111,30 @@
 </tr>
 <tr>
 <td colspan="2" align="center">
-  <img width="50%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
+  <img width="55%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
 </td>
 </tr>
 </table>
 
-<br>
+<br><br>
 
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
-<!-- LIVE REAL-TIME CONTRIBUTION HEATMAP                           -->
+<!-- 365-DAY REAL-TIME CONTRIBUTION HEATMAP                        -->
 <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_06.svg" width="85%" alt="Contribution Map Section"/>
+
+<br><br>
 
 <img src="https://ghchart.rshah.org/FF0055/nff747" width="95%" alt="Live Real-time Contribution Graph" style="background-color: #05080D; padding: 12px; border-radius: 8px; border: 1px solid #FF005530;"/>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- FOOTER // EPILOGUE                                            -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/signal_lost.svg" width="85%" alt="Signal Lost"/>
 
 <br><br>
 
