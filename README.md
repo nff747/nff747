@@ -126,7 +126,7 @@
 
 <br><br>
 
-<img src="https://ghchart.rshah.org/FF0055/nff747" width="95%" alt="Live Real-time Contribution Graph" style="background-color: #05080D; padding: 12px; border-radius: 8px; border: 1px solid #FF005530;"/>
+<img src="./assets/contribution_map.svg" width="95%" alt="Live Real-time Contribution Graph"/>
 
 <br><br>
 
