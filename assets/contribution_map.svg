@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 761 175" width="100%" height="175" style="background-color: #05080D; border: 1px solid #30363d; border-radius: 8px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 761 175" width="100%" height="175" style="background-color: #05080D; border: 1px solid #FF005530; border-radius: 8px;">
 
 <style>
   .title { font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #f0f6fc; }
   .label { font: 400 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
   .legend-text { font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
   .cell { rx: 2px; ry: 2px; transition: all 0.2s ease; }
-  .cell:hover { stroke: #56ff77; stroke-width: 1.5px; }
-  .glow-green { filter: drop-shadow(0 0 3px #39d353); }
+  .cell:hover { stroke: #FF0055; stroke-width: 1.5px; }
+  .glow-red { filter: drop-shadow(0 0 4px #FF0055); }
 </style>
 
 <text x="20" y="25" class="title">54 contributions in the last year</text>
@@ -47,7 +47,7 @@
 <rect x="68" y="111" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="68" y="124" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="81" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="81" y="59" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" class="cell"><title>1 contribution in Sep</title></rect>
+<rect x="81" y="59" width="10" height="10" fill="#80002A" stroke="#b0003b" stroke-width="1" class="cell"><title>1 contribution in Sep</title></rect>
 <rect x="81" y="72" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="81" y="85" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="81" y="98" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
@@ -80,7 +80,7 @@
 <rect x="133" y="85" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="133" y="98" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="133" y="111" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="133" y="124" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" class="cell"><title>1 contribution in Nov</title></rect>
+<rect x="133" y="124" width="10" height="10" fill="#80002A" stroke="#b0003b" stroke-width="1" class="cell"><title>1 contribution in Nov</title></rect>
 <rect x="146" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="146" y="59" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="146" y="72" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
@@ -269,7 +269,7 @@
 <rect x="484" y="85" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="484" y="98" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="484" y="111" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="484" y="124" width="10" height="10" fill="#0e4429" stroke="#006d32" stroke-width="1" class="cell"><title>1 contribution in May</title></rect>
+<rect x="484" y="124" width="10" height="10" fill="#400015" stroke="#700025" stroke-width="1" class="cell"><title>1 contribution in May</title></rect>
 <rect x="497" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="497" y="59" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="497" y="72" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
@@ -308,7 +308,7 @@
 <rect x="562" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="562" y="59" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="562" y="72" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="562" y="85" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" class="cell"><title>1 contribution in Jun</title></rect>
+<rect x="562" y="85" width="10" height="10" fill="#80002A" stroke="#b0003b" stroke-width="1" class="cell"><title>1 contribution in Jun</title></rect>
 <rect x="562" y="98" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="562" y="111" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="562" y="124" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
@@ -322,7 +322,7 @@
 <rect x="588" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="588" y="59" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="588" y="72" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="588" y="85" width="10" height="10" fill="#26a641" stroke="#39d353" stroke-width="1" class="cell glow-green"><title>2 contributions in Jul</title></rect>
+<rect x="588" y="85" width="10" height="10" fill="#C00040" stroke="#e6004c" stroke-width="1" class="cell glow-red"><title>2 contributions in Jul</title></rect>
 <rect x="588" y="98" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="588" y="111" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="588" y="124" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
@@ -391,13 +391,13 @@
 <rect x="705" y="124" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="718" y="46" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
 <rect x="718" y="59" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"><title>No contributions</title></rect>
-<rect x="718" y="72" width="10" height="10" fill="#39d353" stroke="#56ff77" stroke-width="1" class="cell glow-green"><title>13 contributions on Sep 1</title></rect>
-<rect x="718" y="85" width="10" height="10" fill="#39d353" stroke="#56ff77" stroke-width="1" class="cell glow-green"><title>35 contributions on Sep 2</title></rect>
+<rect x="718" y="72" width="10" height="10" fill="#FF0055" stroke="#ff4080" stroke-width="1" class="cell glow-red"><title>13 contributions on Sep 1</title></rect>
+<rect x="718" y="85" width="10" height="10" fill="#FF0055" stroke="#ff4080" stroke-width="1" class="cell glow-red"><title>35 contributions on Sep 2</title></rect>
 <text x="564" y="165" class="legend-text">Less</text>
 <rect x="596" y="157" width="10" height="10" fill="#161b22" stroke="#21262d" stroke-width="1" class="cell"/>
-<rect x="609" y="157" width="10" height="10" fill="#0e4429" stroke="#006d32" stroke-width="1" class="cell"/>
-<rect x="622" y="157" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" class="cell"/>
-<rect x="635" y="157" width="10" height="10" fill="#26a641" stroke="#39d353" stroke-width="1" class="cell"/>
-<rect x="648" y="157" width="10" height="10" fill="#39d353" stroke="#56ff77" stroke-width="1" class="cell"/>
+<rect x="609" y="157" width="10" height="10" fill="#400015" stroke="#700025" stroke-width="1" class="cell"/>
+<rect x="622" y="157" width="10" height="10" fill="#80002A" stroke="#b0003b" stroke-width="1" class="cell"/>
+<rect x="635" y="157" width="10" height="10" fill="#C00040" stroke="#e6004c" stroke-width="1" class="cell"/>
+<rect x="648" y="157" width="10" height="10" fill="#FF0055" stroke="#ff4080" stroke-width="1" class="cell"/>
 <text x="667" y="165" class="legend-text">More</text>
 </svg>

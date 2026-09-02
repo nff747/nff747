@@ -1,5 +1,3 @@
-import json
-
 # Total contributions matching user profile exactly
 TOTAL_CONTRIBUTIONS = 54
 
@@ -16,23 +14,22 @@ NUM_DAYS = 7
 WIDTH = START_X + (NUM_WEEKS * (CELL_SIZE + CELL_GAP)) + 30
 HEIGHT = 175
 
-# Color Palette matching GitHub Dark Mode Emerald Green
+# Color Palette matching Dark Cyberpunk Crimson Red
 BG_COLOR = "#05080D"
-CARD_BORDER = "#30363d"
+CARD_BORDER = "#FF005530"
 EMPTY_CELL_FILL = "#161b22"
 EMPTY_CELL_STROKE = "#21262d"
 
-# Green Level Colors
+# Crimson Level Colors
 LEVEL_COLORS = {
     0: (EMPTY_CELL_FILL, EMPTY_CELL_STROKE),
-    1: ("#0e4429", "#006d32"),
-    2: ("#006d32", "#26a641"),
-    3: ("#26a641", "#39d353"),
-    4: ("#39d353", "#56ff77")
+    1: ("#400015", "#700025"),
+    2: ("#80002A", "#b0003b"),
+    3: ("#C00040", "#e6004c"),
+    4: ("#FF0055", "#ff4080")
 }
 
 # The exact 7 contribution days from the user screenshot (Week, Row):
-# Week 0 is ~Sep 1 year ago, Week 52 is Aug/Sep today
 ACTIVE_DAYS = {
     (3, 1): (2, "1 contribution in Sep"),
     (7, 6): (2, "1 contribution in Nov"),
@@ -43,7 +40,7 @@ ACTIVE_DAYS = {
     (52, 3): (4, "35 contributions on Sep 2")
 }
 
-# Month label positions (aligned across 53 weeks)
+# Month label positions
 MONTHS = [
     (2, "Sep"),
     (6, "Oct"),
@@ -67,8 +64,8 @@ svg.append('''
   .label { font: 400 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
   .legend-text { font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
   .cell { rx: 2px; ry: 2px; transition: all 0.2s ease; }
-  .cell:hover { stroke: #56ff77; stroke-width: 1.5px; }
-  .glow-green { filter: drop-shadow(0 0 3px #39d353); }
+  .cell:hover { stroke: #FF0055; stroke-width: 1.5px; }
+  .glow-red { filter: drop-shadow(0 0 4px #FF0055); }
 </style>
 ''')
 
@@ -89,7 +86,6 @@ for d_idx, d_name in day_labels:
 # Render all 53 weeks x 7 days
 for w in range(NUM_WEEKS):
     for d in range(NUM_DAYS):
-        # Don't render trailing days past current week day if any
         if w == 52 and d > 3:
             continue
             
@@ -99,7 +95,7 @@ for w in range(NUM_WEEKS):
         if (w, d) in ACTIVE_DAYS:
             level, desc = ACTIVE_DAYS[(w, d)]
             fill, stroke = LEVEL_COLORS[level]
-            glow_class = ' class="cell glow-green"' if level >= 3 else ' class="cell"'
+            glow_class = ' class="cell glow-red"' if level >= 3 else ' class="cell"'
             svg.append(f'<rect x="{cx}" y="{cy}" width="{CELL_SIZE}" height="{CELL_SIZE}" fill="{fill}" stroke="{stroke}" stroke-width="1"{glow_class}><title>{desc}</title></rect>')
         else:
             fill, stroke = LEVEL_COLORS[0]
@@ -120,4 +116,4 @@ svg.append('</svg>')
 with open("assets/contribution_map.svg", "w") as f:
     f.write("\n".join(svg))
 
-print("Successfully generated pixel-perfect contribution map with all 54 contributions and green dots!")
+print("Successfully switched to glowing Cyberpunk Crimson Red while keeping all 54 contributions!")
