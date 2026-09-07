@@ -1,14 +1,53 @@
-# Total contributions matching user profile exactly
-TOTAL_CONTRIBUTIONS = 54
+#!/usr/bin/env python3
+"""
+Dynamic Real-Time Contribution Heatmap Vector Generator for nff747
+Queries the live GitHub GraphQL API for the exact contribution calendar
+and renders a pixel-perfect, dark cyberpunk neon crimson SVG.
+"""
 
-# Dimensions matching standard GitHub contribution card
+import subprocess
+import json
+import sys
+from datetime import datetime
+
+USERNAME = "nff747"
+
+query = f'''
+query {{
+  user(login: "{USERNAME}") {{
+    contributionsCollection {{
+      contributionCalendar {{
+        totalContributions
+        weeks {{
+          contributionDays {{
+            contributionCount
+            date
+            weekday
+          }}
+        }}
+      }}
+    }}
+  }}
+}}
+'''
+
+try:
+    res = subprocess.run(["gh", "api", "graphql", "-f", f"query={query}"], capture_output=True, text=True, check=True)
+    data = json.loads(res.stdout)
+    calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+except Exception as e:
+    print(f"Error fetching live contribution data: {e}", file=sys.stderr)
+    sys.exit(1)
+
+total_contributions = calendar["totalContributions"]
+weeks = calendar["weeks"]
+
 CELL_SIZE = 10
 CELL_GAP = 3
 CELL_RADIUS = 2
 START_X = 42
 START_Y = 46
-
-NUM_WEEKS = 53
+NUM_WEEKS = len(weeks)
 NUM_DAYS = 7
 
 WIDTH = START_X + (NUM_WEEKS * (CELL_SIZE + CELL_GAP)) + 30
@@ -29,32 +68,17 @@ LEVEL_COLORS = {
     4: ("#FF0055", "#ff4080")
 }
 
-# The exact 7 contribution days from the user screenshot (Week, Row):
-ACTIVE_DAYS = {
-    (3, 1): (2, "1 contribution in Sep"),
-    (7, 6): (2, "1 contribution in Nov"),
-    (34, 6): (1, "1 contribution in May"),
-    (40, 3): (2, "1 contribution in Jun"),
-    (42, 3): (3, "2 contributions in Jul"),
-    (52, 2): (4, "13 contributions on Sep 1"),
-    (52, 3): (4, "35 contributions on Sep 2")
-}
-
-# Month label positions
-MONTHS = [
-    (2, "Sep"),
-    (6, "Oct"),
-    (11, "Nov"),
-    (15, "Dec"),
-    (19, "Jan"),
-    (24, "Feb"),
-    (28, "Mar"),
-    (32, "Apr"),
-    (37, "May"),
-    (41, "Jun"),
-    (45, "Jul"),
-    (50, "Aug")
-]
+def get_level(count):
+    if count == 0:
+        return 0
+    elif count <= 2:
+        return 1
+    elif count <= 5:
+        return 2
+    elif count <= 9:
+        return 3
+    else:
+        return 4
 
 svg = []
 svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}" style="background-color: {BG_COLOR}; border: 1px solid {CARD_BORDER}; border-radius: 8px;">')
@@ -70,12 +94,22 @@ svg.append('''
 ''')
 
 # Header Title
-svg.append(f'<text x="20" y="25" class="title">{TOTAL_CONTRIBUTIONS} contributions in the last year</text>')
+svg.append(f'<text x="20" y="25" class="title">{total_contributions} contributions in the last year</text>')
 
 # Month labels
-for w_idx, m_name in MONTHS:
-    mx = START_X + w_idx * (CELL_SIZE + CELL_GAP)
-    svg.append(f'<text x="{mx}" y="40" class="label">{m_name}</text>')
+last_month = None
+last_col = -10
+for w_idx, week in enumerate(weeks):
+    if not week["contributionDays"]:
+        continue
+    dt = datetime.strptime(week["contributionDays"][0]["date"], "%Y-%m-%d")
+    m_name = dt.strftime("%b")
+    if m_name != last_month:
+        if w_idx - last_col >= 3 and (len(weeks) - w_idx) >= 2:
+            mx = START_X + w_idx * (CELL_SIZE + CELL_GAP)
+            svg.append(f'<text x="{mx}" y="40" class="label">{m_name}</text>')
+            last_col = w_idx
+        last_month = m_name
 
 # Day of week labels (Mon, Wed, Fri)
 day_labels = [(1, "Mon"), (3, "Wed"), (5, "Fri")]
@@ -84,22 +118,18 @@ for d_idx, d_name in day_labels:
     svg.append(f'<text x="15" y="{my}" class="label">{d_name}</text>')
 
 # Render all 53 weeks x 7 days
-for w in range(NUM_WEEKS):
-    for d in range(NUM_DAYS):
-        if w == 52 and d > 3:
-            continue
-            
-        cx = START_X + w * (CELL_SIZE + CELL_GAP)
-        cy = START_Y + d * (CELL_SIZE + CELL_GAP)
-        
-        if (w, d) in ACTIVE_DAYS:
-            level, desc = ACTIVE_DAYS[(w, d)]
-            fill, stroke = LEVEL_COLORS[level]
-            glow_class = ' class="cell glow-red"' if level >= 3 else ' class="cell"'
-            svg.append(f'<rect x="{cx}" y="{cy}" width="{CELL_SIZE}" height="{CELL_SIZE}" fill="{fill}" stroke="{stroke}" stroke-width="1"{glow_class}><title>{desc}</title></rect>')
-        else:
-            fill, stroke = LEVEL_COLORS[0]
-            svg.append(f'<rect x="{cx}" y="{cy}" width="{CELL_SIZE}" height="{CELL_SIZE}" fill="{fill}" stroke="{stroke}" stroke-width="1" class="cell"><title>No contributions</title></rect>')
+for w_idx, week in enumerate(weeks):
+    for day in week["contributionDays"]:
+        d_idx = day["weekday"]
+        cx = START_X + w_idx * (CELL_SIZE + CELL_GAP)
+        cy = START_Y + d_idx * (CELL_SIZE + CELL_GAP)
+        count = day["contributionCount"]
+        date = day["date"]
+        level = get_level(count)
+        fill, stroke = LEVEL_COLORS[level]
+        glow_class = ' class="cell glow-red"' if level >= 3 else ' class="cell"'
+        title_text = f"{count} contribution{'s' if count != 1 else ''} on {date}" if count > 0 else f"No contributions on {date}"
+        svg.append(f'<rect x="{cx}" y="{cy}" width="{CELL_SIZE}" height="{CELL_SIZE}" fill="{fill}" stroke="{stroke}" stroke-width="1"{glow_class}><title>{title_text}</title></rect>')
 
 # Legend at bottom right
 legend_y = HEIGHT - 18
@@ -113,7 +143,9 @@ svg.append(f'<text x="{legend_x + 5 * (CELL_SIZE + 3) + 6}" y="{legend_y + 8}" c
 
 svg.append('</svg>')
 
-with open("assets/contribution_map.svg", "w") as f:
-    f.write("\n".join(svg))
+svg_content = "\n".join(svg) + "\n"
 
-print("Successfully switched to glowing Cyberpunk Crimson Red while keeping all 54 contributions!")
+with open("assets/contribution_map.svg", "w") as f:
+    f.write(svg_content)
+
+print(f"Successfully generated assets/contribution_map.svg with {total_contributions} real-time contributions!")
