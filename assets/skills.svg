@@ -1,67 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="240px">
-  <style>
-    .bg { fill: #05080D; }
-    .cell-bg { fill: #0D1117; }
-    .grid { stroke: #21262d; stroke-width: 1; }
-    .text { font-family: monospace; font-size: 13px; fill: #F0F6FC; }
-    .text-pct { font-family: monospace; font-size: 13px; fill: #8B949E; text-anchor: end; }
-    .bar-bg { fill: #21262d; }
-    .bar-fill { fill: #FF0055; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8a002e" />
-      <stop offset="100%" stop-color="#FF0055" />
+    <filter id="sglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF0055"/>
+      <stop offset="100%" style="stop-color:#FF006A"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF0055"/>
+      <stop offset="100%" style="stop-color:#cc0044"/>
     </linearGradient>
   </defs>
-  <rect width="100%" height="100%" class="bg"/>
-  <g transform="translate(40, 20)">
-    <rect x="0" y="0" width="350" height="40" class="cell-bg grid"/>
-    <text x="15" y="25" class="text">WebGPU/WGSL</text>
-    <rect x="150" y="17" width="140" height="6" class="bar-bg"/>
-    <rect x="150" y="17" width="135.8" height="6" fill="url(#barGrad)"/>
-    <text x="335" y="25" class="text-pct">97%</text>
 
-    <rect x="370" y="0" width="350" height="40" class="cell-bg grid"/>
-    <text x="385" y="25" class="text">Rust/WASM</text>
-    <rect x="520" y="17" width="140" height="6" class="bar-bg"/>
-    <rect x="520" y="17" width="127.4" height="6" fill="url(#barGrad)"/>
-    <text x="705" y="25" class="text-pct">91%</text>
+  <rect width="800" height="200" fill="#0D1117" rx="8"/>
 
-    <rect x="0" y="50" width="350" height="40" class="cell-bg grid"/>
-    <text x="15" y="75" class="text">TypeScript</text>
-    <rect x="150" y="67" width="140" height="6" class="bar-bg"/>
-    <rect x="150" y="67" width="134.4" height="6" fill="url(#barGrad)"/>
-    <text x="335" y="75" class="text-pct">96%</text>
+  <!-- TITLE -->
+  <text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="12" fill="#FF0055" letter-spacing="4" filter="url(#sglow)">[ THREAT LEVEL ASSESSMENT ]</text>
 
-    <rect x="370" y="50" width="350" height="40" class="cell-bg grid"/>
-    <text x="385" y="75" class="text">Edge Runtimes</text>
-    <rect x="520" y="67" width="140" height="6" class="bar-bg"/>
-    <rect x="520" y="67" width="131.6" height="6" fill="url(#barGrad)"/>
-    <text x="705" y="75" class="text-pct">94%</text>
+  <!-- SKILL 1: WebGL / Three.js -->
+  <text x="20" y="60" font-family="monospace" font-size="11" fill="#c9d1d9">WebGL / Three.js</text>
+  <rect x="180" y="48" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="48" width="0" height="16" rx="2" fill="url(#bar1)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="555" dur="1.5s" fill="freeze" begin="0.2s"/>
+  </rect>
+  <text x="770" y="60" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">96%</text>
 
-    <rect x="0" y="100" width="350" height="40" class="cell-bg grid"/>
-    <text x="15" y="125" class="text">3D Graphics</text>
-    <rect x="150" y="117" width="140" height="6" class="bar-bg"/>
-    <rect x="150" y="117" width="130.2" height="6" fill="url(#barGrad)"/>
-    <text x="335" y="125" class="text-pct">93%</text>
+  <!-- SKILL 2: React / TypeScript -->
+  <text x="20" y="90" font-family="monospace" font-size="11" fill="#c9d1d9">React / TypeScript</text>
+  <rect x="180" y="78" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="78" width="0" height="16" rx="2" fill="url(#bar1)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="530" dur="1.5s" fill="freeze" begin="0.4s"/>
+  </rect>
+  <text x="770" y="90" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">92%</text>
 
-    <rect x="370" y="100" width="350" height="40" class="cell-bg grid"/>
-    <text x="385" y="125" class="text">AI/LLM Systems</text>
-    <rect x="520" y="117" width="140" height="6" class="bar-bg"/>
-    <rect x="520" y="117" width="124.6" height="6" fill="url(#barGrad)"/>
-    <text x="705" y="125" class="text-pct">89%</text>
+  <!-- SKILL 3: GLSL Shaders -->
+  <text x="20" y="120" font-family="monospace" font-size="11" fill="#c9d1d9">GLSL Shaders</text>
+  <rect x="180" y="108" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="108" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="510" dur="1.5s" fill="freeze" begin="0.6s"/>
+  </rect>
+  <text x="770" y="120" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">88%</text>
 
-    <rect x="0" y="150" width="350" height="40" class="cell-bg grid"/>
-    <text x="15" y="175" class="text">Real-time Sys</text>
-    <rect x="150" y="167" width="140" height="6" class="bar-bg"/>
-    <rect x="150" y="167" width="133.0" height="6" fill="url(#barGrad)"/>
-    <text x="335" y="175" class="text-pct">95%</text>
+  <!-- SKILL 4: Blender / 3D Pipeline -->
+  <text x="20" y="150" font-family="monospace" font-size="11" fill="#c9d1d9">Blender / 3D Pipeline</text>
+  <rect x="180" y="138" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="138" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="490" dur="1.5s" fill="freeze" begin="0.8s"/>
+  </rect>
+  <text x="770" y="150" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">85%</text>
 
-    <rect x="370" y="150" width="350" height="40" class="cell-bg grid"/>
-    <text x="385" y="175" class="text">Performance Eng</text>
-    <rect x="520" y="167" width="140" height="6" class="bar-bg"/>
-    <rect x="520" y="167" width="137.2" height="6" fill="url(#barGrad)"/>
-    <text x="705" y="175" class="text-pct">98%</text>
-  </g>
+  <!-- SKILL 5: AI Rigging Workflows -->
+  <text x="20" y="180" font-family="monospace" font-size="11" fill="#c9d1d9">AI Rigging Workflows</text>
+  <rect x="180" y="168" width="580" height="16" rx="2" fill="#161B22"/>
+  <rect x="180" y="168" width="0" height="16" rx="2" fill="url(#bar2)" filter="url(#sglow)">
+    <animate attributeName="width" from="0" to="460" dur="1.5s" fill="freeze" begin="1.0s"/>
+  </rect>
+  <text x="770" y="180" text-anchor="end" font-family="monospace" font-size="10" fill="#FF0055">80%</text>
 </svg>
