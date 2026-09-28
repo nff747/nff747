@@ -7,6 +7,7 @@ Systems & Graphics Engineer specializing in **WebGPU compute**, **browser-native
 ### ⚡ Selected Open-Source Work
 
 #### 🎮 WebGPU & Compute Shaders
+* **[flash-attention-wgsl](https://github.com/nff747/flash-attention-wgsl)** — Hardware-tiled Online Softmax FlashAttention-2 compute engine in WebGPU & WGSL. Eliminates O(N²) intermediate attention matrix allocations with workgroup SRAM cache tiling and causal masking.
 * **[webgpu-vram-pager](https://github.com/nff747/webgpu-vram-pager)** — Virtual memory paging & ring buffer for executing 8B+ LLMs in-browser, bypassing WebGPU `maxStorageBufferBindingSize` limits.
 * **[splat-bvh-core](https://github.com/nff747/splat-bvh-core)** — WebGPU-accelerated parallel Radix Sort and Linear BVH (LBVH) generator for 10M+ 3D Gaussian Splats with sub-millisecond raycasting.
 * **[ocean-fft-wgsl](https://github.com/nff747/ocean-fft-wgsl)** — Real-time Tessendorf spectral ocean wave simulation and Phillips spectrum IFFT in pure WebGPU compute shaders.
