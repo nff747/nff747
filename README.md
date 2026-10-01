@@ -7,6 +7,8 @@ Systems & Graphics Engineer specializing in **WebGPU compute**, **browser-native
 ### ⚡ Selected Open-Source Work
 
 #### 🎮 WebGPU & Compute Shaders
+* **[meshlet-culling-wgsl](https://github.com/nff747/meshlet-culling-wgsl)** — GPU-driven meshlet cluster culling (frustum, normal cone, sub-meshlet LOD) and indirect multi-draw (`drawIndexedIndirect`) engine in WebGPU/WGSL.
+* **[paged-attention-wgsl](https://github.com/nff747/paged-attention-wgsl)** — High-throughput PagedAttention & block-tiled KV-cache virtual memory engine for running multi-head transformer models on WebGPU.
 * **[flash-attention-wgsl](https://github.com/nff747/flash-attention-wgsl)** — Hardware-tiled Online Softmax FlashAttention-2 compute engine in WebGPU & WGSL. Eliminates O(N²) intermediate attention matrix allocations with workgroup SRAM cache tiling and causal masking.
 * **[webgpu-vram-pager](https://github.com/nff747/webgpu-vram-pager)** — Virtual memory paging & ring buffer for executing 8B+ LLMs in-browser, bypassing WebGPU `maxStorageBufferBindingSize` limits.
 * **[splat-bvh-core](https://github.com/nff747/splat-bvh-core)** — WebGPU-accelerated parallel Radix Sort and Linear BVH (LBVH) generator for 10M+ 3D Gaussian Splats with sub-millisecond raycasting.
