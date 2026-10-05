@@ -23,6 +23,8 @@ Systems & Graphics Engineer specializing in **WebGPU compute**, **browser-native
 * **[nova-wasm](https://github.com/nff747/nova-wasm)** — Portable sandboxed execution environment built for zero-trust multi-tenant serverless nodes.
 
 #### 🧰 Middleware & Network Architecture
+* **[edge-rbac-wasm](https://github.com/nff747/edge-rbac-wasm)** — Ultra-fast stateless Authorization middleware compiled to WASM for Cloudflare/Vercel Edge.
+* **[auto-heal-selectors](https://github.com/nff747/auto-heal-selectors)** — Zero-dependency semantic DOM auto-healer proxy for Playwright and Puppeteer.
 * **[agentic-memory-kv](https://github.com/nff747/agentic-memory-kv)** — High-speed strictly typed Key-Value store mapped over SharedArrayBuffer for multi-agent LLM systems.
 * **[edge-context-router](https://github.com/nff747/edge-context-router)** — Ultra-low latency V8 isolate request router for multi-tenant edge AI API gateways.
 * **[idempotency-middleware](https://github.com/nff747/idempotency-middleware)** — Distributed Redis-backed idempotency lock system to prevent race conditions on multi-node inference endpoints.
