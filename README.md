@@ -1,31 +1,147 @@
-<img src="assets/header.svg" width="100%">
+<div align="center">
 
-Systems & Graphics Engineer specializing in **WebGPU compute**, **browser-native LLM runtimes**, and **high-performance memory architectures**. I build infrastructure that forces the browser to run code it wasn't designed for.
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- HERO BANNER // THE ARRIVAL                                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-### ⚡ Selected Open-Source Work
+<img src="./assets/header.svg" width="100%" alt="Cyberpunk Glitch Header"/>
 
-#### 🎮 WebGPU & Compute Shaders
-* **[cr-vector-sync](https://github.com/nff747/cr-vector-sync)** — WebAssembly/WebGPU local-first Vector Database with E2E encrypted peer-to-peer CRDT syncing via OPFS.
-* **[paged-attention-wgsl](https://github.com/nff747/paged-attention-wgsl)** — High-throughput PagedAttention & block-tiled KV-cache virtual memory engine for running multi-head transformer models on WebGPU.
-* **[flash-attention-wgsl](https://github.com/nff747/flash-attention-wgsl)** — Hardware-tiled Online Softmax FlashAttention-2 compute engine in WebGPU & WGSL. Eliminates O(N²) intermediate attention matrix allocations with workgroup SRAM cache tiling and causal masking.
-* **[webgpu-vram-pager](https://github.com/nff747/webgpu-vram-pager)** — Virtual memory paging & ring buffer for executing 8B+ LLMs in-browser, bypassing WebGPU `maxStorageBufferBindingSize` limits.
-* **[radiance-cascades-wgsl](https://github.com/nff747/radiance-cascades-wgsl)** — Real-time flat & nested radiance cascades for global illumination and volumetric light transport.
-* **[subsurface-scattering-wgsl](https://github.com/nff747/subsurface-scattering-wgsl)** — Multi-layered separable BSSRDF approximations with Gaussian convolutions for human skin rendering in WebGPU.
-* **[ocean-fft-wgsl](https://github.com/nff747/ocean-fft-wgsl)** — Radix-2 Fast Fourier Transform for real-time ocean wave simulation (Phillips spectrum) in WGSL compute shaders.
-* **[volumetric-clouds-wgsl](https://github.com/nff747/volumetric-clouds-wgsl)** — Multi-scattering raymarching through Worley/Perlin noise density volumes with Beer's Law attenuation.
-* **[marching-cubes-wgsl](https://github.com/nff747/marching-cubes-wgsl)** — GPU-accelerated isosurface extraction and procedural terrain generation with prefix-sum compaction.
+<br><br>
 
-#### ⚙️ Data Structures & Low-Level Infrastructure
-* **[splat-bvh-core](https://github.com/nff747/splat-bvh-core)** — Parallel Bounding Volume Hierarchy constructor and frustum culling engine for 3D Gaussian Splatting rendering.
-* **[swarm-refactor](https://github.com/nff747/swarm-refactor)** — Distributed multi-agent execution framework built on Node worker threads with shared ArrayBuffer state locks.
-* **[hyper-hnsw-core](https://github.com/nff747/hyper-hnsw-core)** — Browser-native Hierarchical Navigable Small World vector search implementation.
-* **[helix-lsm](https://github.com/nff747/helix-lsm)** — Log-Structured Merge tree optimized for WASM runtimes (edge KV emulation).
-* **[nova-wasm](https://github.com/nff747/nova-wasm)** — Portable sandboxed execution environment built for zero-trust multi-tenant serverless nodes.
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- IDENTITY // SYSTEM MANIFEST                                   -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-#### 🧰 Middleware & Network Architecture
-* **[edge-rbac-wasm](https://github.com/nff747/edge-rbac-wasm)** — Ultra-fast stateless Authorization middleware compiled to WASM for Cloudflare/Vercel Edge.
-* **[auto-heal-selectors](https://github.com/nff747/auto-heal-selectors)** — Zero-dependency semantic DOM auto-healer proxy for Playwright and Puppeteer.
-* **[agentic-memory-kv](https://github.com/nff747/agentic-memory-kv)** — High-speed strictly typed Key-Value store mapped over SharedArrayBuffer for multi-agent LLM systems.
-* **[edge-context-router](https://github.com/nff747/edge-context-router)** — Ultra-low latency V8 isolate request router for multi-tenant edge AI API gateways.
-* **[idempotency-middleware](https://github.com/nff747/idempotency-middleware)** — Distributed Redis-backed idempotency lock system to prevent race conditions on multi-node inference endpoints.
+<img src="./assets/section_01.svg" width="85%" alt="Identity Section"/>
 
+<br><br>
+
+<img src="./assets/terminal.svg" width="85%" alt="Identity Terminal"/>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- 6 FLAGSHIP DEEP-TECH ENGINES (PRODUCTIONS)                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_05.svg" width="85%" alt="Achievements Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/splat-bvh-core">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=splat-bvh-core&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="splat-bvh-core"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/webgpu-vram-pager">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=webgpu-vram-pager&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="webgpu-vram-pager"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/neural-texture-engine">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=neural-texture-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="neural-texture-engine"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/auto-rig-web">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=auto-rig-web&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="auto-rig-web"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/spatial-glass-ui">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=spatial-glass-ui&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="spatial-glass-ui"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/edge-context-router">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=edge-context-router&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="edge-context-router"/>
+</a>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- HARDWARE & RADAR TELEMETRY                                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_03.svg" width="85%" alt="Threat Assessment Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center">
+  <img src="./assets/radar.svg" width="420" alt="Radar Scan"/>
+</td>
+<td align="center">
+  <img src="./assets/waveform.svg" width="420" alt="Audio Waveform"/>
+  <br><br>
+  <img src="./assets/skills.svg" width="420" alt="Skills Matrix"/>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- LIVE TELEMETRY & ACTIVITY                                     -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_04.svg" width="85%" alt="Telemetry Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=nff747&show_icons=true&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9&ring_color=FF0055" alt="GitHub Stats"/>
+</td>
+<td align="center" width="50%">
+  <img width="100%" src="https://streak-stats.demolab.com/?user=nff747&theme=radical&hide_border=true&background=05080D&stroke=FF005530&ring=FF0055&fire=FF0055&currStreakLabel=FF0055&sideLabels=c9d1d9&dates=5c6370&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak Stats"/>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+  <img width="55%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- 365-DAY REAL-TIME CONTRIBUTION HEATMAP                        -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_06.svg" width="85%" alt="Contribution Map Section"/>
+
+<br><br>
+
+<img src="./assets/contribution_map.svg?v=1790038674" width="95%" alt="Live Real-time Contribution Graph"/>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- FOOTER // EPILOGUE                                            -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/signal_lost.svg" width="85%" alt="Signal Lost"/>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=nff747&style=for-the-badge&color=FF0055&label=SIGNAL+INTERCEPTS" alt="Visitor Counter"/>
+
+<br><br>
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0055,50:0D1117,100:05080D&height=80&section=footer" alt="Waving Footer"/>
