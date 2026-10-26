@@ -31,6 +31,18 @@
 <table>
 <tr>
 <td align="center" width="50%">
+<a href="https://github.com/nff747/hyper-splat-engine">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=hyper-splat-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="hyper-splat-engine"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/helix-lsm">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=helix-lsm&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="helix-lsm"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
 <a href="https://github.com/nff747/splat-bvh-core">
   <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=splat-bvh-core&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="splat-bvh-core"/>
 </a>
