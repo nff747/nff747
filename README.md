@@ -138,7 +138,7 @@
 
 <br><br>
 
-<img src="./assets/contribution_map.svg?v=5581_1794031203" width="95%" alt="Live Real-time Contribution Graph"/>
+<img src="./assets/contribution_map.svg?v=5582_1794102602" width="95%" alt="Live Real-time Contribution Graph"/>
 
 <br><br>
 
