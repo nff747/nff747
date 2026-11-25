@@ -1,0 +1,15 @@
+<svg width="420" height="118" viewBox="0 0 420 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="118" rx="8" fill="#05080D"/>
+  <rect x="0.75" y="0.75" width="418.5" height="116.5" rx="7.25" stroke="#FF0055" stroke-opacity="0.35" stroke-width="1.5"/>
+  <path d="M0 10 L0 0 L10 0" stroke="#FF0055" stroke-width="2" fill="none"/>
+  <path d="M410 0 L420 0 L420 10" stroke="#FF0055" stroke-width="2" fill="none"/>
+  <path d="M0 108 L0 118 L10 118" stroke="#FF0055" stroke-width="2" fill="none"/>
+  <path d="M410 118 L420 118 L420 108" stroke="#FF0055" stroke-width="2" fill="none"/>
+  <circle cx="24" cy="28" r="4" fill="#FF0055"/>
+  <text x="36" y="33" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700">webgpu-vram-pager</text>
+  <text x="24" y="60" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12.5">Virtual Memory Paging for WebGPU</text>
+  <rect x="24" y="78" width="115" height="22" rx="4" fill="#FF0055" fill-opacity="0.12" stroke="#FF0055" stroke-opacity="0.35"/>
+  <text x="34" y="93" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">WebGPU · PCIe</text>
+  <rect x="148" y="78" width="115" height="22" rx="4" fill="#00E5FF" fill-opacity="0.10" stroke="#00E5FF" stroke-opacity="0.35"/>
+  <text x="158" y="93" fill="#00E5FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">8B+ Params</text>
+</svg>

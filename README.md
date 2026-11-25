@@ -32,48 +32,48 @@
 <tr>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/hyper-splat-engine">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=hyper-splat-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="hyper-splat-engine"/>
+  <img width="100%" src="./assets/cards/hyper-splat-engine.svg" alt="hyper-splat-engine"/>
 </a>
 </td>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/helix-lsm">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=helix-lsm&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="helix-lsm"/>
+  <img width="100%" src="./assets/cards/helix-lsm.svg" alt="helix-lsm"/>
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/splat-bvh-core">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=splat-bvh-core&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="splat-bvh-core"/>
+  <img width="100%" src="./assets/cards/splat-bvh-core.svg" alt="splat-bvh-core"/>
 </a>
 </td>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/webgpu-vram-pager">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=webgpu-vram-pager&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="webgpu-vram-pager"/>
+  <img width="100%" src="./assets/cards/webgpu-vram-pager.svg" alt="webgpu-vram-pager"/>
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/neural-texture-engine">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=neural-texture-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="neural-texture-engine"/>
+  <img width="100%" src="./assets/cards/neural-texture-engine.svg" alt="neural-texture-engine"/>
 </a>
 </td>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/auto-rig-web">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=auto-rig-web&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="auto-rig-web"/>
+  <img width="100%" src="./assets/cards/auto-rig-web.svg" alt="auto-rig-web"/>
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/agent-readiness-skill">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=agent-readiness-skill&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="agent-readiness-skill"/>
+  <img width="100%" src="./assets/cards/agent-readiness-skill.svg" alt="agent-readiness-skill"/>
 </a>
 </td>
 <td align="center" width="50%">
 <a href="https://github.com/nff747/edge-context-router">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=edge-context-router&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="edge-context-router"/>
+  <img width="100%" src="./assets/cards/edge-context-router.svg" alt="edge-context-router"/>
 </a>
 </td>
 </tr>
