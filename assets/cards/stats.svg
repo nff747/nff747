@@ -1,0 +1,11 @@
+<svg width="420" height="150" viewBox="0 0 420 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="150" rx="8" fill="#05080D"/>
+  <rect x="0.75" y="0.75" width="418.5" height="148.5" rx="7.25" stroke="#FF0055" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="24" y="34" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">// SYSTEM TELEMETRY</text>
+  <text x="24" y="64" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Public Repositories</text>
+  <text x="396" y="64" text-anchor="end" fill="#00E5FF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">40+</text>
+  <text x="24" y="90" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Annual Contributions</text>
+  <text x="396" y="90" text-anchor="end" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">8,710+</text>
+  <text x="24" y="116" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Primary Architecture</text>
+  <text x="396" y="116" text-anchor="end" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">WebGPU / WGSL / Rust</text>
+</svg>

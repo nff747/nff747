@@ -1,0 +1,14 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" rx="8" fill="#05080D"/>
+  <rect x="0.75" y="0.75" width="418.5" height="118.5" rx="7.25" stroke="#FF0055" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="24" y="30" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">// CORE LANGUAGES</text>
+  <rect x="24" y="46" width="372" height="8" rx="4" fill="#111827"/>
+  <rect x="24" y="46" width="150" height="8" rx="4" fill="#3178C6"/>
+  <rect x="174" y="46" width="100" height="8" rx="4" fill="#FF0055"/>
+  <rect x="274" y="46" width="75" height="8" rx="4" fill="#DEA584"/>
+  <rect x="349" y="46" width="47" height="8" rx="4" fill="#00E5FF"/>
+  <circle cx="30" cy="78" r="4" fill="#3178C6"/><text x="40" y="82" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="11">TypeScript 40%</text>
+  <circle cx="155" cy="78" r="4" fill="#FF0055"/><text x="165" y="82" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="11">WGSL 27%</text>
+  <circle cx="250" cy="78" r="4" fill="#DEA584"/><text x="260" y="82" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="11">Rust 20%</text>
+  <circle cx="335" cy="78" r="4" fill="#00E5FF"/><text x="345" y="82" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="11">GLSL 13%</text>
+</svg>
