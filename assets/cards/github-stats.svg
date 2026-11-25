@@ -1,0 +1,11 @@
+<svg width="420" height="165" viewBox="0 0 420 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="165" rx="8" fill="#05080D"/>
+  <rect x="0.75" y="0.75" width="418.5" height="163.5" rx="7.25" stroke="#FF0055" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="24" y="34" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700">nff747 // SYSTEM TELEMETRY</text>
+  <text x="24" y="68" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="13">Public Repositories:</text>
+  <text x="260" y="68" fill="#00E5FF" font-family="ui-monospace, monospace" font-size="13" font-weight="700">40+ Active</text>
+  <text x="24" y="96" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="13">Total Contributions:</text>
+  <text x="260" y="96" fill="#FF0055" font-family="ui-monospace, monospace" font-size="13" font-weight="700">8,710+</text>
+  <text x="24" y="124" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="13">Verification Suites:</text>
+  <text x="260" y="124" fill="#10B981" font-family="ui-monospace, monospace" font-size="13" font-weight="700">100% Passing</text>
+</svg>

@@ -115,7 +115,7 @@
 <table>
 <tr>
 <td align="center" width="50%">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=nff747&show_icons=true&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9&ring_color=FF0055" alt="GitHub Stats"/>
+  <img width="100%" src="./assets/cards/github-stats.svg" alt="GitHub Stats"/>
 </td>
 <td align="center" width="50%">
   <img width="100%" src="https://streak-stats.demolab.com/?user=nff747&theme=radical&hide_border=true&background=05080D&stroke=FF005530&ring=FF0055&fire=FF0055&currStreakLabel=FF0055&sideLabels=c9d1d9&dates=5c6370&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak Stats"/>
@@ -123,7 +123,7 @@
 </tr>
 <tr>
 <td colspan="2" align="center">
-  <img width="55%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
+  <img width="55%" src="./assets/cards/top-langs.svg" alt="Top Languages"/>
 </td>
 </tr>
 </table>

@@ -1,0 +1,14 @@
+<svg width="420" height="135" viewBox="0 0 420 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="135" rx="8" fill="#05080D"/>
+  <rect x="0.75" y="0.75" width="418.5" height="133.5" rx="7.25" stroke="#FF0055" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="24" y="32" fill="#FF0055" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">CORE LANGUAGES</text>
+  <rect x="24" y="50" width="372" height="8" rx="4" fill="#111827"/>
+  <rect x="24" y="50" width="165" height="8" rx="4" fill="#00E5FF"/>
+  <rect x="189" y="50" width="110" height="8" fill="#FF0055"/>
+  <rect x="299" y="50" width="60" height="8" fill="#D7B886"/>
+  <rect x="359" y="50" width="37" height="8" rx="4" fill="#10B981"/>
+  <circle cx="30" cy="82" r="4" fill="#00E5FF"/><text x="42" y="86" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="12">TypeScript 44%</text>
+  <circle cx="210" cy="82" r="4" fill="#FF0055"/><text x="222" y="86" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="12">WGSL / GLSL 30%</text>
+  <circle cx="30" cy="108" r="4" fill="#D7B886"/><text x="42" y="112" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="12">Rust / WASM 16%</text>
+  <circle cx="210" cy="108" r="4" fill="#10B981"/><text x="222" y="112" fill="#c9d1d9" font-family="ui-monospace, monospace" font-size="12">Python / Shell 10%</text>
+</svg>
