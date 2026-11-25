@@ -1,41 +1,163 @@
 <div align="center">
 
-# 🌑 LUNAR PARADOX // `nff747`
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- HERO BANNER // THE ARRIVAL                                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
 
-**Applied Graphics Laboratory & Systems Studio**  
-`WebGPU / WGSL` · `Browser-Native AI` · `Zero-Copy Concurrency` · `Agent Infrastructure`
+<img src="./assets/header.svg" width="100%" alt="Cyberpunk Glitch Header"/>
 
-[![Lunar Paradox](https://img.shields.io/badge/Studio-lunarparadox.com-090d16?style=for-the-badge&logo=probot&logoColor=d7b886)](https://lunarparadox.com)
-[![Portfolio](https://img.shields.io/badge/Interactive_Showcase-nff747.github.io-06b6d4?style=for-the-badge&logo=webgl&logoColor=white)](https://nff747.github.io/)
-[![Agent Readiness](https://img.shields.io/badge/Live_Demo-Agent_Readiness-10b981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nff747.github.io/agent-readiness-skill/)
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- IDENTITY // SYSTEM MANIFEST                                   -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_01.svg" width="85%" alt="Identity Section"/>
+
+<br><br>
+
+<img src="./assets/terminal.svg" width="85%" alt="Identity Terminal"/>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- 6 FLAGSHIP DEEP-TECH ENGINES (PRODUCTIONS)                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_05.svg" width="85%" alt="Achievements Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/hyper-splat-engine">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=hyper-splat-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="hyper-splat-engine"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/helix-lsm">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=helix-lsm&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="helix-lsm"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/splat-bvh-core">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=splat-bvh-core&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="splat-bvh-core"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/webgpu-vram-pager">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=webgpu-vram-pager&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="webgpu-vram-pager"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/neural-texture-engine">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=neural-texture-engine&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="neural-texture-engine"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/auto-rig-web">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=auto-rig-web&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="auto-rig-web"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/spatial-glass-ui">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=spatial-glass-ui&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="spatial-glass-ui"/>
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/nff747/edge-context-router">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=edge-context-router&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="edge-context-router"/>
+</a>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- HARDWARE & RADAR TELEMETRY                                    -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_03.svg" width="85%" alt="Threat Assessment Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center">
+  <img src="./assets/radar.svg" width="420" alt="Radar Scan"/>
+</td>
+<td align="center">
+  <img src="./assets/waveform.svg" width="420" alt="Audio Waveform"/>
+  <br><br>
+  <img src="./assets/skills.svg" width="420" alt="Skills Matrix"/>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- LIVE TELEMETRY & ACTIVITY                                     -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_04.svg" width="85%" alt="Telemetry Section"/>
+
+<br><br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=nff747&show_icons=true&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9&ring_color=FF0055" alt="GitHub Stats"/>
+</td>
+<td align="center" width="50%">
+  <img width="100%" src="https://streak-stats.demolab.com/?user=nff747&theme=radical&hide_border=true&background=05080D&stroke=FF005530&ring=FF0055&fire=FF0055&currStreakLabel=FF0055&sideLabels=c9d1d9&dates=5c6370&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak Stats"/>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+  <img width="55%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nff747&layout=compact&hide_border=true&bg_color=05080D&title_color=FF0055&text_color=c9d1d9" alt="Top Languages"/>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- 365-DAY REAL-TIME CONTRIBUTION HEATMAP                        -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/section_06.svg" width="85%" alt="Contribution Map Section"/>
+
+<br><br>
+
+<<<<<<< Updated upstream
+<img src="./assets/contribution_map.svg?v=8694_1795576518" width="95%" alt="Live Real-time Contribution Graph"/>
+=======
+<img src="./assets/contribution_map.svg?v=8694_1795576518" width="95%" alt="Live Real-time Contribution Graph"/>
+>>>>>>> Stashed changes
+
+<br><br>
+
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+<!-- FOOTER // EPILOGUE                                            -->
+<!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+<img src="./assets/signal_lost.svg" width="85%" alt="Signal Lost"/>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=nff747&style=for-the-badge&color=FF0055&label=SIGNAL+INTERCEPTS" alt="Visitor Counter"/>
+
+<br><br>
 
 </div>
 
----
-
-### ⚡ Flagship Engineering
-
-| Project | Domain | Proof & Capabilities | Links |
-| :--- | :--- | :--- | :--- |
-| **[`agent-readiness-skill`](https://github.com/nff747/agent-readiness-skill)** | **AI Agent Infra** | Implements all 18 discovery, auth & commerce specs (`RFC 9727`, `A2A`, `MCP`, `WebMCP`, `x402`) in 1 command. | [Live Auditor](https://nff747.github.io/agent-readiness-skill/) · [Repo](https://github.com/nff747/agent-readiness-skill) |
-| **[`auto-rig-web`](https://github.com/nff747/auto-rig-web)** | **Browser ML / 3D** | Zero-click `.gltf` skeletal rigging via browser-local ONNX WebGPU + CCDIK & biharmonic skinning (`~18ms`). | [Repo](https://github.com/nff747/auto-rig-web) |
-| **[`splat-bvh-core`](https://github.com/nff747/splat-bvh-core)** | **WebGPU / WGSL** | Parallel Radix Sort & Karras LBVH for 10M+ 3D Gaussian Splats in `14.3ms` (`220x` over JS/SIMD). | [Repo](https://github.com/nff747/splat-bvh-core) |
-| **[`webgpu-vram-pager`](https://github.com/nff747/webgpu-vram-pager)** | **GPU Memory** | Virtual memory paging & PCIe ring-buffer wrapper bypassing WebGPU `maxStorageBufferBindingSize`. | [Repo](https://github.com/nff747/webgpu-vram-pager) |
-| **[`turbo-ring-ipc`](https://github.com/nff747/turbo-ring-ipc)** | **Concurrency** | Lock-free `SharedArrayBuffer` SPSC/MPSC ring buffer & zero-copy IPC for Web Workers & AudioWorklets. | [Repo](https://github.com/nff747/turbo-ring-ipc) |
-| **[`lunar-paradox`](https://github.com/nff747/lunar-paradox)** | **Studio Monorepo** | Locked 60-FPS WebGL/WebGPU runtimes, zero-server browser tools (PBR Synth, SSIM, DSP), 42/42 passing suites. | [Live Site](https://lunarparadox.com) · [Repo](https://github.com/nff747/lunar-paradox) |
-
----
-
-### 🛠️ Core Stack
-
-```text
-Graphics & Compute : WebGPU · WGSL · WebGL2 · Three.js · GLSL · 3D Gaussian Splatting
-Systems & Memory   : Rust · WebAssembly (SIMD) · SharedArrayBuffer · Lock-Free Ring Buffers
-AI & Agent Infra   : ONNX Runtime WebGPU · MCP (SEP-1649) · A2A · WebMCP · RFC 9727/9728 · x402
-```
-
----
-
-<div align="center">
-  <sub>Engineered by <a href="https://lunarparadox.com">Lunar Paradox</a> · Open Source under Apache-2.0 & MIT</sub>
-</div>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0055,50:0D1117,100:05080D&height=80&section=footer" alt="Waving Footer"/>
