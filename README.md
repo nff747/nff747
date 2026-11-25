@@ -67,8 +67,8 @@
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/nff747/spatial-glass-ui">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=spatial-glass-ui&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="spatial-glass-ui"/>
+<a href="https://github.com/nff747/agent-readiness-skill">
+  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=nff747&repo=agent-readiness-skill&theme=radical&hide_border=true&bg_color=05080D&title_color=FF0055&icon_color=FF0055&text_color=c9d1d9" alt="agent-readiness-skill"/>
 </a>
 </td>
 <td align="center" width="50%">
