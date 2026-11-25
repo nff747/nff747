@@ -139,9 +139,9 @@
 <br><br>
 
 <<<<<<< Updated upstream
-<img src="./assets/contribution_map.svg?v=8641_1795490333" width="95%" alt="Live Real-time Contribution Graph"/>
+<img src="./assets/contribution_map.svg?v=8694_1795576518" width="95%" alt="Live Real-time Contribution Graph"/>
 =======
-<img src="./assets/contribution_map.svg?v=8641_1795490333" width="95%" alt="Live Real-time Contribution Graph"/>
+<img src="./assets/contribution_map.svg?v=8694_1795576518" width="95%" alt="Live Real-time Contribution Graph"/>
 >>>>>>> Stashed changes
 
 <br><br>
